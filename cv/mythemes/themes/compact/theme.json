@@ -1,0 +1,45 @@
+{
+  "title": "compact",
+  "description": "A compact résumé theme for FluentCV.",
+  "author": "hacksalot <hacksalot@indevious.com> (https://github.com/hacksalot)",
+  "engine": "handlebars",
+  "inherits": {
+    "txt": "basis",
+    "md": "basis"
+  },
+  "fonts": {
+    "all": {
+      "default": [
+        "Calibri Light",
+        "Helvetica Neue",
+        "Helvetica",
+        "Segoe UI",
+        "sans-serif"
+      ],
+      "title": [
+        "Calibri Light"
+      ],
+      "heading3": [
+        "Calibri Light"
+      ]
+    },
+    "doc": {
+      "default": {
+        "name": "Calibri Light",
+        "size": 20
+      },
+      "heading1": {
+        "name": "Calibri Light",
+        "size": 20
+      },
+      "heading3": {
+        "name": "Calibri Light",
+        "size": 20
+      },
+      "title": {
+        "name": "Calibri Light",
+        "size": 20
+      }
+    }
+  }
+}
