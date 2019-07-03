@@ -1,0 +1,51 @@
+<section style="padding-top: 120px;" id="scroll-element" data-scroll-index="{{ .Site.Params.Profile.goto }}">
+  <div class="hero">
+    <div class="hero-left">
+      <img src="{{ .Site.BaseURL }}img/{{ .Site.Params.Profile.Avatar }}" style="max-width: 50%; border-radius: 50%; ">
+      <h2 class="subtitle">{{ .Site.Params.Profile.subtitle }}</h2>
+      <div class="icons">
+        {{ if isset .Site.Params "email" }}
+        <a href="mailto:{{ .Site.Params.Email }}" class="iconlink">
+          <i class="fas fa-envelope"></i>
+        </a>
+        {{ end }}
+        {{ if isset .Site.Params "twitter" }}
+        <a href="{{ .Site.Params.Twitter }}" target="blank" class="iconlink">
+          <i class="fab fa-twitter"></i>
+        </a>
+        {{ end }}
+        {{ if isset .Site.Params "linkedin" }}
+        <a href="{{ .Site.Params.LinkedIn }}" target="blank" class="iconlink">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        {{ end }}
+        {{ if isset .Site.Params "github" }}
+        <a href="{{ .Site.Params.Github }}" target="blank" class="iconlink">
+          <i class="fab fa-github"></i>
+        </a>
+        {{ end }}
+        {{ if isset .Site.Params "stackoverflow" }}
+        <a href="{{ .Site.Params.Stackoverflow }}" target="blank" class="iconlink">
+          <i class="fab fa-stack-overflow"></i>
+        </a>
+        {{ end }}
+
+      </div>
+      {{ if isset .Site.Params.Profile "resume" }}
+      <a href="{{ .Site.BaseURL }}{{ .Site.Params.Profile.resume }}" target="blank" class="download-resume" onclick="ga('send', {hitType: 'event',eventCategory: 'CTA',eventAction: 'download'});">
+        <i class="far fa-file-pdf fa-lg" style="margin-right: 5px"></i>
+        Download Resume (PDF)
+      </a>
+      <a href="{{ .Site.BaseURL }}{{ .Site.Params.Profile.resume_word }}" target="blank" class="download-resume download-resume-word" onclick="ga('send', {hitType: 'event',eventCategory: 'CTA',eventAction: 'download'});">
+        <i class="far fa-file-word fa-lg" style="margin-right: 5px"></i>
+        Word
+      </a>
+      {{ end }}
+    </div>
+    <div class="hero-right">
+      {{ range $paragraph := .Site.Params.Profile.description }}
+      <p>{{ $paragraph | markdownify }}</p>
+      {{ end }}
+    </div>
+  </div>
+</section>

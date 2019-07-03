@@ -2,7 +2,7 @@
   "basics": {
     "name": "René Kann",
     "label": "Senior iOS Developer | Mobile Lead",
-    "picture": "",
+    "picture": "../../static/img/avatar.jpg",
     "email": "mail@renekann.de",
     "phone": "0160 4421713",
     "degree": "",
@@ -42,45 +42,58 @@
   "work": [
     {
       "company": "Successyou GmbH",
-      "position": "Senior iOS Developer + Consultant",
+      "position": "Freelance Senior iOS Developer + Consultant",
+      "teaser": "Maintained B2B App for sales rep",
       "website": "http://www.successyou.de/",
       "startDate": "2019-01-01",
       "endDate": "2019-05-31",
-      "summary": "Maintained an app for a large multinational corporation of nonalcoholic beverage concentrates which was used by a large group of sales representatives in europe. The app was highly reactive, connected to Salesforce backend and used Couchbase lite for local persistance. I migrated the app and related frameworks to Swift 4.2 and gave architectural decisions and recommendations.",
+      "summary": "Maintained an app for a large multinational corporation of nonalcoholic beverage concentrates which was used by a large group of sales representatives in Europe. The app was highly reactive, connected to Salesforce backend and used Couchbase lite for local persistence. I migrated the app and related frameworks to Swift 4.2 and gave architectural decisions and recommendations.",
       "highlights": [
-        "Salesforce SDK",
-        "Couchbase lite"
+        "Salesforce SDK / Salesforce with iOS",
+        "Used Couchbase lite for local persistence",
+        "International Team"
       ]
     },
     {
       "company": "Free2Move (Groupe PSA)",
-      "position": "Senior iOS Developer + Consultant",
+      "position": "Freelance Senior iOS Developer + Consultant",
       "website": "https://de.free2move.com/",
       "startDate": "2018-10-01",
       "endDate": "2018-12-31",
-      "summary": "Working in an english speaking environment I supported with test-driven implementation of a complete new feature for multi provider registration. Did the architectural decisions and recommendations, gave a workshop about introducing testability for the overall project and helped migrating from Objective-C to Swift 4.x",
+      "summary": "Working in an English speaking environment I supported with test-driven implementation of a complete new feature for multi provider registration. Did the architectural decisions and recommendations, gave a workshop about introducing testability for the overall project and helped migrating from Objective-C to Swift 4.x",
       "highlights": [
-        "Introduced testability",
-        "Workshop about testing",
+        "Introduced testability and gave workshop about testing",
+        "International Team",
         "Migration from Objective-C to Swift"
       ]
     },
     {
       "company": "ImmobilienScout24",
-      "position": "Senior iOS Developer + Consultant",
+      "position": "Freelance Senior iOS Developer + Consultant",
       "website": "https://www.immobilienscout24.de/",
       "startDate": "2018-01-01",
       "endDate": "2018-09-30",
-      "summary": "Working in an english speaking environment I supported the Scout AG with test-driven implementation of new product functions using Swift 4.x / Objective-C and MVVM, MVP in biweekly sprints for the ImmobilienScout24 App. I also consulted in evaluation of new product ideas, feasibility study to connect external service providers, evaluation of solutions. ",
-      "shortSummary": "Realtor Lead Engine"
+      "summary": "Working in an English speaking environment I supported with test-driven implementation of new product functions using Swift / Objective-C and MVVM, MVP in biweekly sprints for the ImmobilienScout24 App. I also consulted in evaluation of new product ideas, feasibility study to connect external service providers. ",
+      "shortSummary": "Realtor Lead Engine",
+      "highlights": [
+        "Implemented new feature to generate realtor leads",
+        "International Team",
+        "Migration from Objective-C to Swift"
+      ],
+      "pagebreak": true
     },
     {
       "company": "BitingBit GmbH",
-      "position": "Senior iOS Developer + Consultant",
+      "position": "Freelance Senior iOS Developer + Consultant",
       "website": "https://www.bitingbit.de/",
       "startDate": "2017-01-01",
       "endDate": "2017-12-31",
-      "summary": "Support in maintaining an iOS app for a leading german multinational automotive company. Implemented new features in weekly sprints, performed code reviews and refactored several parts of the app to reduce technical debt. I also implemented an app (from scratch) for visitors of congresses to manage their favourite lectures, asking questions to the referents and reviewing the whole event agenda. The app uses Google Firebase as backend, the main architecture is built upon MVVM and set its focus upon offline capabilities to deal with bad network coverage."
+      "summary": "Support in maintaining an iOS app for a leading German multinational automotive company. Implemented new features in weekly sprints, performed code reviews and refactored several parts of the app to reduce technical debt. I also implemented an app (from scratch) for visitors of congresses to manage their favorite lectures, asking questions to the referents and reviewing the whole event agenda. The app uses Google Firebase as backend, the main architecture is built upon MVVM and set its focus upon offline capabilities to deal with bad network coverage.",
+      "highlights": [
+        "Maintained app for automotive environment",
+        "Mentoring mobile developers",
+        "Build swift app for dentist exhibition from scratch"
+      ]
     },
     {
       "company": "UCDplus GmbH",
@@ -88,10 +101,7 @@
       "website": "https://www.ucdplus.com/",
       "startDate": "2011-05-01",
       "endDate": "2016-12-31",
-      "summary": "Technical lead and manager of various projects for well-known, multinational clients (e.g. Daimler AG, Mercedes-Benz Museum, Autostadt / Porsche AG). I implemented iOS apps as lead developer as part of a team with varying sizes like the Daimler AG Entertainment app, the Daimler AG Jobs app, an app for the Porsche AG for the new opened Porsche pavilion at the Autostadt Wolfsburg. Besides, I lead the development team and optimized the processes and procedures of the development stack.",
-      "highlights": [
-        ""
-      ]
+      "summary": "Technical lead and manager of various projects for well-known, multinational clients (e.g. Daimler AG, Mercedes-Benz Museum, Autostadt / Porsche AG). I implemented iOS apps as lead developer as part of a team with varying sizes like the Daimler AG Entertainment app, the Daimler AG Jobs app, an app for the Porsche AG for the new opened Porsche pavilion at the Autostadt Wolfsburg. Besides, I lead the development team and optimized the processes and procedures of the development stack."
     },
     {
       "company": "Soraxdesign",
@@ -99,10 +109,7 @@
       "website": "http://www.soraxdesign.de",
       "startDate": "2006-06-01",
       "endDate": "2010-12-31",
-      "summary": "We implemented rich internet applications (RIA) with Flash, Flex and Silverlight and web applications for various clients in the Magdeburg area. Main focus on developing customized content management systems and individual web apps for clients like HASA GmbH, Zephram GbR, IG Innenstadt, Magdeburger Weihnachtsmarkt and various other clients. Further, we developed a popular guest book with flat file storing (no need of a MySQL database, which was expensive at this time) which has been used by thousands of users.",
-      "highlights": [
-        ""
-      ]
+      "summary": "We implemented rich internet applications (RIA) with Flash, Flex and web applications for various national clients. Main focus was developing customized content management systems and individual web apps."
     },
     {
       "company": "Zephram GbR",
@@ -118,7 +125,8 @@
       "website": "http://www.schroeder-wendt.de",
       "startDate": "2006-06-01",
       "endDate": "2009-10-31",
-      "summary": "Implemented rich internet applications (RIA) with Flash, Flex and Silverlight and web applications for various larger clients. Created a prototype of a possible online video analyzing and editing tool with Silverlight for a presentation at the Cebit 2012 together with Microsoft."
+      "summary": "Implemented rich internet applications (RIA) with Flash, Flex and Silverlight and web applications for various larger clients. Created a prototype of a possible online video analyzing and editing tool with Silverlight for a presentation at the Cebit 2012 together with Microsoft.",
+      "pagebreak": true
     }
   ],
   "workLabel": "",
@@ -159,14 +167,21 @@
         "MVVM",
         "MVP",
         "MVC",
+        "Broadcasting Pattern",
+        "VIPER",
         "Unit Testing",
         "XCTest",
         "Core Data",
         "Native Apps",
         "Salesforce SDK",
         "Couchbase lite",
+        "PromiseKit",
         "Buddybuild",
-        "HockeyApp"
+        "HockeyApp",
+        "Tesseract OCR",
+        "Git",
+        "In-App Purchasing (IAP)",
+        "WatchKit"
       ]
     },
     {
@@ -198,7 +213,8 @@
         "AWS",
         "Serverless",
         "ReactJS",
-        "JavaScript"
+        "JavaScript",
+        "MySQL"
       ]
     }
   ],
@@ -209,7 +225,7 @@
       "website": "",
       "startDate": "2013-01-01",
       "endDate": "2014-06-30",
-      "summary": "Co-Organized a monthly meetup with up to 100 visitors related to web and mobile technologies at startups and organisations.",
+      "summary": "Co-Organized a monthly meetup with up to 100 visitors related to web and mobile technologies at startups and organizations.",
       "highlights": []
     }
   ],

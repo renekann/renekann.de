@@ -28,6 +28,10 @@
   width: 100%;
 }
 
+.section-item-half {
+  width: 50%;
+}
+
 .section-item-flex-container {
   display: -webkit-box;
   display: -moz-box;
@@ -35,24 +39,30 @@
   display: -moz-flex;
   display: -webkit-flex;
   display: flex;
-  align-items: center;
+  align-items: baseline;
   justify-content: space-between;
   -webkit-flex-direction: row;
   flex-direction: row;
 }
 
-@media all and (max-width: 842px) {
-  .work-item-flex-container {
-    justify-content: flex-start;
-    -webkit-flex-direction: column;
-    flex-direction: column;
-    align-items: flex-start;
-  }
+.section-wrapper h2 {
+  color: #5a54af;
+  letter-spacing: 0;
+  font-size: 24px;
+  margin: 0px;
 }
 
-.section-item h3 {
-  /* Discover: */
+.section-wrapper h3 {
   color: #5a54af;
+  letter-spacing: 0;
+  font-size: 20px;
+  margin: 0px;
+  font-weight: 300;
+  margin-top: 10px;
+}
+
+.work-date {
+  margin: 0px;
 }
 
 .section-wrapper a {
@@ -69,22 +79,68 @@
   line-height: 1.8em;
 }
 
-.section-item p {
+.section-box p {
   font-size: 16px;
   color: #777777;
   letter-spacing: 0;
   line-height: 1.8em;
 }
 
-span {
-  font-size: 16px;
-  color: #777777;
-  letter-spacing: 0;
-  line-height: 1.8em;
+.download-resume {
+  width: 250px;
+  border-radius: 5px;
+  display: inline-block;
 }
 
-h3 {
+.download-resume-word {
+  width: 90px;
+  background: #5A54AF;
+}
+
+p {
+    display: block;
+    margin-block-start: 16px;
+    margin-block-end: 16px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.title {
+  /* My Process: */
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 38px;
+  color: #000000;
   letter-spacing: 0;
-  font-size: 24px;
-  margin: 0px;
+  line-height: 38px;
+  margin-bottom: 16px;
+}
+
+.iconlink {
+  color: green;
+}
+
+@media all and (max-width: 842px) {
+  .section-item-flex-container {
+    justify-content: flex-start;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .section-wrapper h2 {
+    font-size: 18px;
+  }
+
+  .section-wrapper h3 {
+    font-size: 14px;
+  }
+
+  .work-date {
+    margin-top: 10px;
+  }
+
+  .section-item-half {
+    width: 100%;
+  }
 }

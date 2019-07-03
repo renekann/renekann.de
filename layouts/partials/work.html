@@ -1,20 +1,24 @@
-<section data-scroll-index="2">
+<section data-scroll-index="{{ .Site.Params.work.goto }}">
   <div class="section-box">
     <div class="header">
       <h1 class="title">{{ .Site.Params.work.Title }}</h1>
-      <h2 class="subtitle">{{ .Site.Params.work.Subtitle }}</h2>
     </div>
     <div class="section-wrapper">
       {{ range $.Site.Data }}
       {{ range .work }}
       <div class="section-item">
         <div class="section-item-flex-container">
-          <h3>{{ .position }}</h3>
           <div>
-            <a href="{{ .url }}">{{ .company }}</a>
-            <span>, {{ dateFormat "01/2006" .startDate }} - {{ dateFormat "01/2006" .endDate }}</span>
+            <h2 class="work-title">{{ .position }} at <a href="{{ .url }}">{{ .company }}</a></h2>
+            {{ if .teaser }}
+            <h3 class="teaser">{{ .teaser }}</h3>
+            {{ end }}
           </div>
+          <p class="work-date">
+            {{ dateFormat "01/2006" .startDate }} - {{ dateFormat "01/2006" .endDate }}
+          </p>
         </div>
+
         <p>{{ .summary }}</p>
         <ul>
           {{ range .highlights }}

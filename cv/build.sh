@@ -1,15 +1,16 @@
 #!/bin/sh
 
 function convert2fresh {
-  hackmyresume convert resume-jrs.json TO resume-fresh.json
+  hackmyresume convert ../data/resume.json TO resume-fresh.json
 }
 
 function pdf {
-  hackmyresume build resume-jrs.json TO out/resume.pdf -t positive
+  hackmyresume build ../data/resume.json TO out/resume-renekann-mobile-developer.html -t themes/node_modules/jsonresume-theme-rocketspacer-tweaked
+  wkhtmltopdf --print-media-type out/resume-renekann-mobile-developer.html out/resume-renekann-mobile-developer.pdf
 }
 
 function word {
-  hackmyresume build resume-jrs.json TO out/resume.doc -t mythemes/themes/compact
+  hackmyresume build ../data/resume.json TO out/resume.doc -t mythemes/themes/compact
 }
 
 function install {

@@ -12,12 +12,12 @@
     {{ partial "nav.html" . }}
     {{ end }}
 
-    {{ if .Site.Params.hero.enable }}
-    {{ partial "hero.html" . }}
+    {{ if .Site.Params.profile.enable }}
+    {{ partial "profile.html" . }}
     {{ end }}
 
-    {{ if .Site.Params.case_studies.enable }}
-    {{ partial "case_studies.html" . }}
+    {{ if .Site.Params.skills.enable }}
+    {{ partial "skills.html" . }}
     {{ end }}
 
     {{ if .Site.Params.work.enable }}

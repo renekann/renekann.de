@@ -1,0 +1,19 @@
+<section data-scroll-index="{{ .Site.Params.skills.goto }}">
+  <div class="section-box">
+    <div class="header">
+      <h1 class="title">{{ .Site.Params.skills.Title }}</h1>
+    </div>
+    <div class="section-wrapper">
+      {{ range $.Site.Data }}
+      {{ range .skills }}
+      <div class="section-item-half">
+        <div class="section-item-flex-container">
+          <h2>{{ .name }}</h2>
+        </div>
+        <p>{{ delimit .keywords ", " }}</p>
+      </div>
+      {{ end }}
+      {{ end }}
+    </div>
+  </div>
+</section>
