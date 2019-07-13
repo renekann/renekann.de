@@ -1,4 +1,4 @@
-baseURL = "https://www.renekann.de"
+baseURL = "/"
 languageCode = "en-us"
 theme = "renekann.de"
 DefaultContentLanguage = "en"
