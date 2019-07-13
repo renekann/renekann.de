@@ -1,30 +1,41 @@
-<section data-scroll-index="{{ .Site.Params.work.goto }}">
-  <div class="section-box">
-    <div class="header">
-      <h1 class="title">{{ .Site.Params.work.Title }}</h1>
+<section id="{{ .Site.Params.work.anchor }}">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <h1>{{ .Site.Params.work.Title }}</h1>
+      </div>
     </div>
-    <div class="section-wrapper">
+    <div class="work">
       {{ range $.Site.Data }}
       {{ range .work }}
-      <div class="section-item">
-        <div class="section-item-flex-container">
-          <div>
-            <h2 class="work-title">{{ .position }} at <a href="{{ .url }}">{{ .company }}</a></h2>
-            {{ if .teaser }}
-            <h3 class="teaser">{{ .teaser }}</h3>
-            {{ end }}
+      <div class="row">
+        <div class="col-1 d-md-none timeline-beam">&nbsp;</div>
+        <div class="col-11 d-md-none">{{ dateFormat "01/2006" .startDate }} - {{ dateFormat "01/2006" .endDate }}</div>
+      </div>
+      <div class="row">
+        <div class="col-1 col-md-2 col-xl-1 timeline-times">
+          <div class="timeline-end">
+            <div class="d-none d-md-block">
+              <small>{{ dateFormat "01/2006" .endDate }}</small>
+            </div>
           </div>
-          <p class="work-date">
-            {{ dateFormat "01/2006" .startDate }} - {{ dateFormat "01/2006" .endDate }}
-          </p>
+          <div class="timeline-start d-none d-md-block">
+            <div><small>{{ dateFormat "01/2006" .startDate }}</small></div>
+          </div>
         </div>
-
-        <p>{{ .summary }}</p>
-        <ul>
-          {{ range .highlights }}
-          <li>{{ . }}</li>
-          {{ end }}
-        </ul>
+        <div class="col-11 col-md-10 col-xl-11 timeline-info">
+          <h3><span>{{ .position }}</span></h3>
+          <span><a href="{{ .website }}">{{ .company }}</a></span>
+          <p>{{ .summary }}</p>
+          <ul>
+            {{ range .highlights }}
+            <li>{{ . }}</li>
+            {{ end }}
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-1 col-md-2 col-xl-1 timeline-beam-dotted">&nbsp;</div>
       </div>
       {{ end }}
       {{ end }}

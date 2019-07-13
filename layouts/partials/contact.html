@@ -1,0 +1,64 @@
+<section class="contact py-5" id="{{ .Site.Params.contact.anchor }}">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <h1>{{ .Site.Params.contact.Title }}</h1>
+      </div>
+    </div>
+    <div class="row">
+      {{ $resume := .Site.Data.resume }}
+      {{ $location := .Site.Data.resume.basics.location }}
+      <div class="col-lg-6 contact-card">
+        <h3>René Kann</h3>
+        <h4>{{ $resume.basics.label }}</h4>
+        <ul>
+          <li><a href="mailto:{{ $resume.basics.email }}">{{ $resume.basics.email }}</a></li>
+          <li><a href="tel:{{replace $resume.basics.phone " " "" }}">{{ $resume.basics.phone }}</a></li>
+          <li>{{ $location.address }}, {{ $location.postalCode }} {{ $location.city }} </li>
+        </ul>
+        <p>
+          {{ range where $resume.basics.profiles "network" "Twitter" }}
+          <a href="{{ .url }}" target="blank" class="custom-btn custom-btn-social custom-btn-bg-light">
+            <i class="fab fa-twitter fa-lg"></i>
+          </a>
+          {{ end }}
+          {{ range where $resume.basics.profiles "network" "LinkedIn" }}
+          <a href="{{ .url }}" target="blank" class="custom-btn custom-btn-social custom-btn-bg-light">
+            <i class="fab fa-linkedin fa-lg"></i>
+          </a>
+          {{ end }}
+          {{ range where $resume.basics.profiles "network" "GitHub" }}
+          <a href="{{ .url }}" target="blank" class="custom-btn custom-btn-social custom-btn-bg-light">
+            <i class="fab fa-github fa-lg"></i>
+          </a>
+          {{ end }}
+          {{ range where $resume.basics.profiles "network" "Stackoverflow" }}
+          <a href="{{ .url }}" target="blank" class="custom-btn custom-btn-social custom-btn-bg-light">
+            <i class="fab fa-stack-overflow fa-lg"></i>
+          </a>
+          {{ end }}
+          <a href="{{ .Site.BaseURL }}/vcard.vcf" target="blank" class="custom-btn custom-btn-social custom-btn-bg-light">
+            <i class="far fa-address-card vcard"></i>vCard</a>
+        </p>
+      </div>
+      <div class="col-lg-6">
+        <h3>{{ .Site.Params.contact.working_together }}</h3>
+        <form action="https://app.99inbound.com/api/e/Yt0LOhWn" method="post">
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Your email">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Your Name">
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea class="form-control" id="message" rows="3" placeholder="Your message"></textarea>
+          </div>
+          <button type="submit" class="btn custom-btn custom-btn-bg">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

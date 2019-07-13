@@ -1,41 +1,61 @@
-baseURL = "http://example.org/"
+baseURL = "https://www.renekann.de"
 languageCode = "en-us"
-title = "My New Hugo Site"
-theme = "hugo-lodi-theme"
+theme = "renekann.de"
+DefaultContentLanguage = "en"
+
+[languages]
+  [languages.en]
+    title = "René Kann - Senior iOS Developer / Mobile developer in Berlin"
+  [languages.de]
+    title = "René Kann - Senior iOS Developer / Mobile developer in Berlin"
 
 [params]
-    theme_color = "#574CDD"
-    description = "Portfolio of Alexis Collado, UX Designer"
-    description_photo = "portfolio.jpg"
-    favicon = "favicon.png"
-    logo = "logo.png"
-    email = "mail@renekann.de"
-    twitter = "https://twitter.com/renekann"
-    linkedin = "https://www.linkedin.com/in/renekann/"
-    github = "https://github.com/renekann"
-    stackoverflow = "https://stackoverflow.com/users/1514846/rene-kann"
+  favicon = "favicon.png"
+  logo = "logo.png"
     
 [params.nav]
   enable = true
 
 [params.profile]
   enable = true
-  avatar = "avatar.jpg"
-  subtitle = "Hi! I'm Alexis, a UX Designer and Evangelist from Manila."
-  description = ["**Currently doing consultancy work at UX Society. Previously doing UX and product at Agoda in Bangkok, Thailand as an international intern.**", "I founded [User Experience Society](https://www.facebook.com/UXSoc/), the first student UX organization in the Philippines. For two years, we've had 20+ events with 30+ speakers for over 300 members and 500+ attendees. We've expanded to [California](https://www.facebook.com/profile.php?id=245708449193012) this year.", "I do a bit of writing as well. [Here's an article with a total of 21,000+ views to InVision & Medium](http://blog.invisionapp.com/ux-internship-wisdom/) talking about 50 things I learned spending 3 years as a UX intern.", "I help cultivate the design community in Manila too. I'm the youngest core member of [UX Philippines](https://www.facebook.com/groups/uxphilippines/) and I moderated a panel with some cool people for the [UXPH 2017 Conference](https://www.uxphilippines.com).", "I'm finishing my Bachelor's degree in Management Information Systems at the Ateneo de Manila University, expecting to graduate in 2018."]
   resume = "resume.pdf"
   resume_word ="resume-word.doc"
-  goto = 1
+  title_menu = "About"
+  anchor = "about"
 
 [params.skills]
   enable = true
   title = "Skills"
-  goto = 2
+  title_menu = "Skills"
+  anchor = "skills"
 
 [params.work]
   enable = true
   title = "My Work"
-  goto = 3
+  title_menu = "Work"
+  anchor = "work"
+  
+[params.services]
+  enable = false
+  title = "How I can help"
+  title_menu = "Services"
+
+[params.languages]
+  enable = true
+  title = "Languages"
+  title_menu = "Languages"
+
+[params.education]
+  enable = true
+  title = "Education"
+  title_menu = "Education"
+  
+[params.contact]
+  enable = true
+  title = "Contact"
+  title_menu = "Contact"
+  working_together = "Interested to work together? Let's talk"
+  anchor = "contact"
 
 [params.footer]
   enable = true

@@ -1,0 +1,40 @@
+<!-- MENU -->
+<nav class="navbar navbar-expand-sm navbar-light">
+  <div class="container">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      <span class="navbar-toggler-icon"></span>
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      {{ if .IsHome }}
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item">
+          <a href="#{{ .Site.Params.profile.anchor }}" class="nav-link"><span data-hover="{{ .Site.Params.profile.title_menu }}">{{ .Site.Params.profile.title_menu }}</span></a>
+        </li>
+        <li class="nav-item">
+          <a href="#{{ .Site.Params.work.anchor }}" class="nav-link"><span data-hover="{{ .Site.Params.work.title_menu }}">{{ .Site.Params.work.title_menu }}</span></a>
+        </li>
+        <li class="nav-item">
+          <a href="#{{ .Site.Params.skills.anchor }}" class="nav-link"><span data-hover="{{ .Site.Params.skills.title_menu }}">{{ .Site.Params.skills.title_menu }}</span></a>
+        </li>
+        <li class="nav-item">
+          <a href="#{{ .Site.Params.contact.anchor }}" class="nav-link"><span data-hover="{{ .Site.Params.contact.title_menu }}">{{ .Site.Params.contact.title_menu }}</span></a>
+        </li>
+      </ul>
+      {{ else }}
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item">
+          <a href="/" class="nav-link"><span data-hover="Home">Home</span></a>
+        </li>
+      </ul>
+      {{ end }}
+      <ul class="navbar-nav ml-lg-auto">
+        <div class="ml-lg-4">
+          <div class="color-mode d-lg-flex justify-content-center align-items-center">
+            <i class="color-mode-icon fas fa-lightbulb-on"></i><span class="color-mode-text">Color mode</span> </div>
+        </div>
+      </ul>
+    </div>
+  </div>
+</nav>

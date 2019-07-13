@@ -8,6 +8,7 @@
     "degree": "",
     "website": "www.renekann.de",
     "summary": "I am a software engineer with many years of experience for iOS and web, including knowledge of the \"full-stack\" of web technologies for frontend and backend services.",
+    "longSummary": "As a developer and technical lead I managed various projects for well-known, multinational clients (e.g. Daimler AG, Mercedes-Benz Museum, Autostadt / Porsche AG, ImmobilienScout AG) and lead teams of varying sizes (between 5 to 15 persons). Having worked in a usability agency for many years and being extremely self-motivated with a strong interest for „usable“ products which are balanced with a technical design for a long term use.",
     "highlights": null,
     "location": {
       "address": "Prenzlauer Allee 44",
@@ -28,7 +29,7 @@
         "url": "https://twitter.com/renekann"
       },
       {
-        "network": "stackoverflow",
+        "network": "Stackoverflow",
         "username": "rene-kann",
         "url": "https://stackoverflow.com/users/1514846/rene-kann"
       },
@@ -231,12 +232,12 @@
   ],
   "languages": [
     {
-      "name": "English",
-      "level": "Professional working proficiency"
-    },
-    {
       "name": "German",
       "level": "Native or bilingual proficiency"
+    },
+    {
+      "name": "English",
+      "level": "Professional working proficiency"
     },
     {
       "name": "Spanish",

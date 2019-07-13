@@ -1,51 +1,45 @@
-<section style="padding-top: 120px;" id="scroll-element" data-scroll-index="{{ .Site.Params.Profile.goto }}">
-  <div class="hero">
-    <div class="hero-left">
-      <img src="{{ .Site.BaseURL }}img/{{ .Site.Params.Profile.Avatar }}" style="max-width: 50%; border-radius: 50%; ">
-      <h2 class="subtitle">{{ .Site.Params.Profile.subtitle }}</h2>
-      <div class="icons">
-        {{ if isset .Site.Params "email" }}
-        <a href="mailto:{{ .Site.Params.Email }}" class="iconlink">
-          <i class="fas fa-envelope"></i>
-        </a>
-        {{ end }}
-        {{ if isset .Site.Params "twitter" }}
-        <a href="{{ .Site.Params.Twitter }}" target="blank" class="iconlink">
-          <i class="fab fa-twitter"></i>
-        </a>
-        {{ end }}
-        {{ if isset .Site.Params "linkedin" }}
-        <a href="{{ .Site.Params.LinkedIn }}" target="blank" class="iconlink">
-          <i class="fab fa-linkedin"></i>
-        </a>
-        {{ end }}
-        {{ if isset .Site.Params "github" }}
-        <a href="{{ .Site.Params.Github }}" target="blank" class="iconlink">
-          <i class="fab fa-github"></i>
-        </a>
-        {{ end }}
-        {{ if isset .Site.Params "stackoverflow" }}
-        <a href="{{ .Site.Params.Stackoverflow }}" target="blank" class="iconlink">
-          <i class="fab fa-stack-overflow"></i>
-        </a>
-        {{ end }}
-
+<section class="about d-lg-flex justify-content-center align-items-center" id="{{ .Site.Params.profile.anchor }}">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 col-md-12 col-12">
+        <div class="about-image">
+          <img src="{{ .Site.BaseURL }}img/{{ .Params.Avatar }}" class="img-fluid cover-photo">
+        </div>
       </div>
-      {{ if isset .Site.Params.Profile "resume" }}
-      <a href="{{ .Site.BaseURL }}{{ .Site.Params.Profile.resume }}" target="blank" class="download-resume" onclick="ga('send', {hitType: 'event',eventCategory: 'CTA',eventAction: 'download'});">
-        <i class="far fa-file-pdf fa-lg" style="margin-right: 5px"></i>
-        Download Resume (PDF)
-      </a>
-      <a href="{{ .Site.BaseURL }}{{ .Site.Params.Profile.resume_word }}" target="blank" class="download-resume download-resume-word" onclick="ga('send', {hitType: 'event',eventCategory: 'CTA',eventAction: 'download'});">
-        <i class="far fa-file-word fa-lg" style="margin-right: 5px"></i>
-        Word
-      </a>
-      {{ end }}
+      <div class="col-lg-9 col-md-12 col-12">
+        <h1 class="animated animated-text">
+          <span>{{ .Params.Title }}</span>
+          <div id="typed-strings">
+            {{ range .Params.title_animations }}
+            <p>{{ . }}</p>
+            {{ end }}
+          </div>
+          <span class="animated-info">
+          </span>
+        </h1>
+        <p>{{ .Site.Data.resume.basics.summary }}</p>
+        <div class="custom-btn-group mt-4">
+          <a href="{{ .Site.BaseURL }}/{{ .Params.resume_pdf }}" class="btn mr-lg-2 custom-btn custom-btn-bg resume-btn"><i class='resume-icon far fa-file-pdf fa-lg'></i> Download Resume (PDF)</a>
+          <a href="{{ .Site.BaseURL }}/{{ .Params.resume_doc }}" class="btn mr-lg-2 custom-btn custom-btn-bg-light"><i class='resume-icon far fa-file-word fa-lg'></i> Download Resume (Word)</a>
+        </div>
+      </div>
     </div>
-    <div class="hero-right">
-      {{ range $paragraph := .Site.Params.Profile.description }}
-      <p>{{ $paragraph | markdownify }}</p>
-      {{ end }}
+    <div class="row">
+      <div class="col-lg-9 offset-lg-3">
+        <div class="about-long-text">
+          <p>
+            {{ .Site.Data.resume.basics.longSummary }}
+          </p>
+          <h2>{{ .Params.what_i_can_help_title }}</h2>
+          <p>
+            <ul>
+              {{ range .Params.what_i_can_help }}
+              <li>{{ . }}</li>
+              {{ end }}
+              <ul>
+          </p>
+        </div>
+      </div>
     </div>
   </div>
 </section>
