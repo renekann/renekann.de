@@ -8,16 +8,16 @@
     <div class="row">
       {{ range $.Site.Data }}
       {{ range .education }}
-      <div class="col-2">
+      <div class="col-12">
         <p class="work-date">
           <small>{{ dateFormat "01/2006" .startDate }} - {{ dateFormat "01/2006" .endDate }}</small>
         </p>
       </div>
-      <div class="col-10">
+      <div class="col-12">
         <h3><span>{{ .studyType }} {{ .area }}</span></h3>
         <h4>{{ .institution }}</h4>
       </div>
-      <div class="offset-2 col-10">
+      <div class="col-12">
         <p>
           {{ $gpa := .gpa }}
           {{ range $.Site.Data }}

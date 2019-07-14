@@ -1,5 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Lato:300,700'); // VARIABLES
-$font-base: 'Lato', sans-serif;
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
+
+// VARIABLES
+$font-base: 'Roboto', sans-serif;
+
 $body-font-size: 18px;
 $h1-font-size: 34px;
 $h2-font-size: 22px;
@@ -7,34 +10,43 @@ $h3-font-size: 18px;
 $h4-font-size: 14px;
 $small-font-size: 14px;
 $link-font-size: 16px;
+
 $font-weight-bold: bold;
 $font-weight-normal: normal;
 $font-weight-light: 300;
+
 $h1-font-color: #212121;
 $h2-font-color: #353535;
 $h3-font-color: #484848;
 $h4-font-color: #484848;
+
 $body-font-color: #5b5b5b;
+$body-font-color-dark: #5b5b5b;
+
 $text-white: #ffffff;
-$dark-mode-color: #121212;
+$dark-mode-color: #212121;
+$dark-mode-navbar-bg-color: #121212;
 $main-color: #6ab7ff;
-$main-color-dark: #005cb2;
+$main-color-dark: #0077c2;
 $border-color: #f2f2f1;
 $button-color: #474559;
 $href-color: #EFA00B;
 $href-color-dark: #EFA00B;
+$timelime-line-color: #d6d6d6;
 $timelime-dot-color: #ffffff;
 $timelime-dot-border-color: $main-color; // phones only
-$screen-sx-min: 371px; // Small tablets and large smartphones (landscape view)
+
+$screen-xs-min: 371px; // Small tablets and large smartphones (landscape view)
 $screen-sm-min: 576px; // Small tablets (portrait view)
 $screen-md-min: 768px; // Tablets and small desktops
 $screen-lg-min: 992px; // Large tablets and desktops
 $screen-xl-min: 1200px;
+
 @mixin transition-effect {
   transition: all 0.4s ease;
 }
-@mixin sx {
-  @media (max-width: #{$screen-sx-min}) {
+@mixin xs {
+  @media (max-width: #{$screen-xs-min}) {
     @content;
   }
 }
@@ -221,7 +233,8 @@ ul {
 }
 
 #typed-strings {
-  display: none;
+  display    : none;
+  font-weight: 400;
 }
 // MENU
 
@@ -234,18 +247,15 @@ ul {
   will-change     : transform;
   transition      : transform 200ms linear;
   background-color: #fff;
+  border-bottom   : 1px solid #efefef;
 }
 
 .navbar-brand {
   font-weight: $font-weight-bold;
 }
 
-.navbar-expand-sm {
-  .navbar-nav {
-    .nav-link {
-      padding: 0 20px;
-    }
-  }
+.nav-link {
+  padding: 4px 30px 4px 0 !important;
 }
 
 .nav-link {
@@ -333,20 +343,23 @@ ul {
 // profile
 
 .cover-photo {
-  border-radius: 50%;
+  border-radius: 100%;
   padding      : 25px;
 }
 
 .about {
-  li:before {
-    content    : "\f067";
-    /* FontAwesome Unicode */
-    font-family: FontAwesome;
-    display    : inline-block;
-    margin-left: -1.3em;
-    /* same as padding-left set on li */
-    width      : 1.3em;
-    /* same as padding-left set on li */
+  li {
+    list-style: none;
+  }
+
+  li::before {
+    font-family : "Font Awesome 5 Free";
+    font-weight : 900;
+    content     : "\f067";
+    display     : inline-block;
+    margin-left : -20px;
+    margin-right: 12px;
+
   }
 
   .about-long-text {
@@ -363,8 +376,8 @@ ul {
 // COLOR MODE
 
 .color-mode {
-  font-weight: $font-weight-bold;
-  cursor     : pointer;
+  font-size: 16px;
+  cursor   : pointer;
 }
 
 .color-mode-icon {
@@ -375,13 +388,25 @@ ul {
 .dark-mode {
   background: $dark-mode-color;
 
+  .cover-photo {
+    opacity: 0.85;
+  }
+
+  .cover-photo:hover {
+    opacity: 1;
+  }
+
   .work .row:nth-child(2) .timeline-times .timeline-end {
     background-color: $dark-mode-color;
   }
 
   .navbar {
-    background   : $dark-mode-color;
+    background   : $dark-mode-navbar-bg-color;
     border-bottom: 1px solid #1f1f1f;
+  }
+
+  .navbar-toggler-icon {
+    background: $text-white;
   }
 
   .small-text {
@@ -402,6 +427,7 @@ ul {
   h4,
   h5,
   h6,
+  label,
   li,
   p,
   small {
@@ -462,7 +488,7 @@ ul {
 }
 
 .timeline-times {
-  border-right: 1px solid $button-color;
+  border-right: 1px solid $timelime-line-color;
 }
 
 .timeline-start {
@@ -496,12 +522,12 @@ ul {
 
 .timeline-beam {
   height      : 100%;
-  border-right: 1px solid $button-color;
+  border-right: 1px solid $timelime-line-color;
 }
 
 .timeline-beam-dotted {
   height      : 70px;
-  border-right: 1px dashed $button-color;
+  border-right: 1px dashed $timelime-line-color;
 }
 
 .typed-cursor {
@@ -552,8 +578,9 @@ ul {
 .footer-container {
   height: 60px;
 }
+
 // RESPONSIVE STYLES
-@include sx {
+@include xs {
   .timeline-beam,
   .timeline-beam-dotted,
   .timeline-end,
@@ -565,7 +592,18 @@ ul {
     margin-bottom: 30px;
   }
 }
+
+@include rwd(520) {
+  .iamtext {
+    display: block;
+  }
+}
 @include sm {
+  .w-sx-100 {
+    width      : 100%;
+    line-height: 2;
+  }
+
   .animated-item {
     font-size: 24px;
   }
@@ -596,19 +634,9 @@ ul {
   .animated-item {
     font-size: 28px;
   }
-
-  .navbar-collapse {
-    background    : $text-white;
-    text-align    : center;
-    padding-bottom: 20px;
-  }
-
-  .navbar-expand-sm .navbar-nav .nav-link {
-    padding: 3px 20px;
-  }
 }
 @include lg {
-  .color-mode {
+  .color-mode-text {
     display: none;
   }
 

@@ -1,3 +1,8 @@
-# Thank you
+---
+redirectURL: "/"
+redirectTime: 5
+---
+# Thank you!
 
-Hello imprint
+Thanks for your message.  
+I will come back to you soon.
