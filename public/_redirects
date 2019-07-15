@@ -4,5 +4,5 @@
 https://renekann.netlify.com/* https://www.renekann.de/:splat 301!
 
 # Rewrite to keys
-http://keys.renekann.de https://keybase.io/renekann/pgp_keys.asc 301!
-https://keys.renekann.de https://keybase.io/renekann/pgp_keys.asc 301!
+http://keys.renekann.de/* https://keybase.io/renekann/pgp_keys.asc 301!
+https://keys.renekann.de/* https://keybase.io/renekann/pgp_keys.asc 301!
