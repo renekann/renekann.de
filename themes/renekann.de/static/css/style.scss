@@ -5,6 +5,7 @@ $font-base: 'Roboto', sans-serif;
 
 $body-font-size: 18px;
 $h1-font-size: 34px;
+$h1-font-size-phone: 30px;
 $h2-font-size: 22px;
 $h3-font-size: 18px;
 $h4-font-size: 14px;
@@ -167,6 +168,12 @@ strong {
 ul {
   margin: 0;
 }
+
+a[href^="x-apple-data-detectors:"] {
+  color          : inherit;
+  text-decoration: inherit;
+}
+
 // CUSTOM BUTTON
 
 .custom-btn {
@@ -223,10 +230,6 @@ ul {
   margin-right: 10px;
 }
 // ANIMATED TEXT
-
-.animated {
-  position: relative;
-}
 
 .animated-info {
   color: $main-color;
@@ -596,6 +599,10 @@ ul {
 @include rwd(520) {
   .iamtext {
     display: block;
+  }
+
+  .animated-text {
+    font-size: $h1-font-size-phone;
   }
 }
 @include sm {

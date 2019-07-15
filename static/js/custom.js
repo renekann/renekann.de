@@ -64,14 +64,17 @@
   $(".social-links a").tooltip();
 
   function setColorScheme() {
-    const isDarkMode = window.matchMedia("(prefers-color-scheme: dark)")
+    const shouldUseDarkMode = window.matchMedia("(prefers-color-scheme: dark)")
       .matches;
-    const isLightMode = window.matchMedia("(prefers-color-scheme: light)")
-      .matches;
-    const isNotSpecified = window.matchMedia(
+    const shouldUseLightMode = window.matchMedia(
+      "(prefers-color-scheme: light)"
+    ).matches;
+    const canUseNoPreference = window.matchMedia(
       "(prefers-color-scheme: no-preference)"
     ).matches;
-    const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified;
+
+    const hasNoSupport =
+      !shouldUseDarkMode && !shouldUseLightMode && !canUseNoPreference;
 
     window
       .matchMedia("(prefers-color-scheme: dark)")
@@ -80,11 +83,12 @@
       .matchMedia("(prefers-color-scheme: light)")
       .addListener(e => e.matches && activateLightMode());
 
-    if (isDarkMode) activateDarkMode();
-    if (isLightMode) activateLightMode();
-    if (isNotSpecified || hasNoSupport) {
+    if (shouldUseDarkMode) activateDarkMode();
+    if (shouldUseLightMode) activateLightMode();
+    if (canUseNoPreference || hasNoSupport) {
       var now = new Date();
       var hour = now.getHours();
+
       if (hour < 4 || hour >= 16) {
         activateDarkMode();
       }

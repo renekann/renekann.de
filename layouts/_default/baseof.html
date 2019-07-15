@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="format-detection" content="date=no">
   <title>{{ block "title" . }}
     {{ .Site.Title }}
     {{ end }}
@@ -22,7 +23,7 @@
   <link rel="stylesheet" href="{{ .Site.BaseURL }}css/all.min.css">
 </head>
 
-<body class="dark-mode">
+<body>
   {{ partial "nav.html" . }}
   <!-- Code that all your templates share, like a header -->
   {{ block "main" . }}
