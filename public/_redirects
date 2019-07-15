@@ -2,7 +2,6 @@
 
 # Redirect default Netlify subdomain to primary domain
 https://renekann.netlify.com/* https://www.renekann.de/:splat 301!
-https://app.renekann.de/* https://www.renekann.de/:splat 301!
 
 # Rewrite to keys
 http://keys.renekann.de/* https://keybase.io/renekann/pgp_keys.asc 301!
