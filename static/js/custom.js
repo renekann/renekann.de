@@ -91,6 +91,8 @@
 
       if (hour < 4 || hour >= 16) {
         activateDarkMode();
+      } else {
+        activateLightMode();
       }
     }
   }
