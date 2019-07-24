@@ -1,0 +1,26 @@
+{{ define "main" }}
+{{ if .Site.Params.profile.enable }}
+{{ partial "profile.html" . }}
+{{ end }}
+{{ if .Site.Params.clients.enable }}
+{{ partial "clients.html" . }}
+{{ end }}
+{{ if .Site.Params.services.enable }}
+{{ partial "services.html" . }}
+{{ end }}
+{{ if .Site.Params.work.enable }}
+{{ partial "work.html" . }}
+{{ end }}
+{{ if .Site.Params.skills.enable }}
+{{ partial "skills.html" . }}
+{{ end }}
+{{ if .Site.Params.languages.enable }}
+{{ partial "languages.html" . }}
+{{ end }}
+{{ if .Site.Params.education.enable }}
+{{ partial "education.html" . }}
+{{ end }}
+{{ if .Site.Params.contact.enable }}
+{{ partial "contact.html" . }}
+{{ end }}
+{{ end }}

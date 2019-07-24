@@ -33,6 +33,7 @@ $border-color: #f2f2f1;
 $button-color: #474559;
 $href-color: #EFA00B;
 $href-color-dark: #EFA00B;
+$language-link-color: #d6d6d6;
 $timelime-line-color: #d6d6d6;
 $timelime-dot-color: #ffffff;
 $timelime-dot-border-color: $main-color; // phones only
@@ -174,6 +175,10 @@ a[href^="x-apple-data-detectors:"] {
   text-decoration: inherit;
 }
 
+li {
+  font-weight: 300;
+}
+
 // CUSTOM BUTTON
 
 .custom-btn {
@@ -251,6 +256,7 @@ a[href^="x-apple-data-detectors:"] {
   transition      : transform 200ms linear;
   background-color: #fff;
   border-bottom   : 1px solid #efefef;
+  height          : 60px;
 }
 
 .navbar-brand {
@@ -258,7 +264,11 @@ a[href^="x-apple-data-detectors:"] {
 }
 
 .nav-link {
-  padding: 4px 30px 4px 0 !important;
+  padding: 3px 30px 3px 0 !important;
+}
+
+.navbar-right-elements {
+  display: flex;
 }
 
 .nav-link {
@@ -362,7 +372,6 @@ a[href^="x-apple-data-detectors:"] {
     display     : inline-block;
     margin-left : -20px;
     margin-right: 12px;
-
   }
 
   .about-long-text {
@@ -376,16 +385,53 @@ a[href^="x-apple-data-detectors:"] {
   font-weight: $font-weight-normal;
   display    : block;
 }
+
+// Language
+.language {
+  ul {
+    list-style: none;
+    margin    : 0;
+    padding   : 0;
+  }
+
+  li {
+    display     : inline;
+    margin-right: 10px;
+  }
+
+  a {
+    color: $language-link-color;
+
+  }
+
+  padding-right: 30px;
+
+  .selected {
+    color: $href-color;
+  }
+}
+
 // COLOR MODE
 
 .color-mode {
-  font-size: 16px;
-  cursor   : pointer;
+  font-size : 16px;
+  cursor    : pointer;
+  margin-top: 2px;
+
+  span {
+    padding-left: 5px;
+  }
 }
 
 .color-mode-icon {
   position: relative;
-  right   : 6px;
+}
+
+.color-mode-text-dark,
+.color-mode-text-light {
+  &.active {
+    display: none;
+  }
 }
 
 .dark-mode {
@@ -458,6 +504,17 @@ a[href^="x-apple-data-detectors:"] {
     }
   }
 
+  .language {
+    a {
+      color: $text-white;
+
+      &:focus,
+      &:hover {
+        color: $href-color-dark;
+      }
+    }
+  }
+
   .custom-btn {
     color: $text-white;
 
@@ -478,11 +535,29 @@ a[href^="x-apple-data-detectors:"] {
       }
     }
 
+    &.custom-btn-social {
+      border: 1px solid #333333;
+    }
+
     &.custom-btn-bg {
       &:hover {
         background: $main-color-dark;
       }
     }
+  }
+
+  .timeline-end,
+  .timeline-start {
+    &:after {
+      background: $dark-mode-color;
+      border    : 2px solid $text-white;
+    }
+  }
+
+  .form-control {
+    background-color: $dark-mode-navbar-bg-color;
+    border          : 1px solid #333333;
+    color           : #fff;
   }
 }
 
@@ -495,7 +570,8 @@ a[href^="x-apple-data-detectors:"] {
 }
 
 .timeline-start {
-  bottom: 0;
+  bottom       : 0;
+  margin-bottom: 5px;
 }
 
 .timeline-end,
@@ -516,6 +592,16 @@ a[href^="x-apple-data-detectors:"] {
     position     : absolute;
     right        : 7px;
     top          : 4px;
+  }
+}
+
+.timeline-info {
+  p {
+    margin: 0;
+  }
+
+  ul {
+    margin-top: 10px;
   }
 }
 
@@ -576,6 +662,19 @@ a[href^="x-apple-data-detectors:"] {
     }
   }
 }
+
+// PIWIK
+.piwik {
+  margin-left : -10px;
+  margin-right: -10px;
+
+  .piwik-frame {
+    border: 0;
+    height: 150px;
+    width : 100%;
+  }
+}
+
 // footer
 
 .footer-container {
@@ -583,28 +682,41 @@ a[href^="x-apple-data-detectors:"] {
 }
 
 // RESPONSIVE STYLES
-@include xs {
-  .timeline-beam,
-  .timeline-beam-dotted,
-  .timeline-end,
-  .timeline-start {
+@include lg {
+  .color-mode-text {
     display: none;
   }
 
-  .timeline-info {
-    margin-bottom: 30px;
+  .about-image {
+    margin-top: 0;
+    text-align: center;
+  }
+
+  .cover-photo {
+    max-width: 40%;
+  }
+
+  .contact-card {
+    padding-bottom: 20px;
   }
 }
 
-@include rwd(520) {
-  .iamtext {
-    display: block;
+@include md {
+  .animated-item {
+    font-size: 28px;
   }
 
-  .animated-text {
-    font-size: $h1-font-size-phone;
+  .cover-photo {
+    max-width: 50%;
+  }
+
+  .piwik {
+    .piwik-frame {
+      height: 200px;
+    }
   }
 }
+
 @include sm {
   .w-sx-100 {
     width      : 100%;
@@ -636,27 +748,42 @@ a[href^="x-apple-data-detectors:"] {
     display: block;
     margin : 10px 0 0;
   }
-}
-@include md {
-  .animated-item {
-    font-size: 28px;
+
+  .piwik {
+    .piwik-frame {
+      height: 220px;
+    }
   }
 }
-@include lg {
-  .color-mode-text {
+
+@include rwd(520) {
+  .iamtext {
+    display: block;
+  }
+
+  .animated-text {
+    font-size: $h1-font-size-phone;
+  }
+}
+
+@include xs {
+  .timeline-beam,
+  .timeline-beam-dotted,
+  .timeline-end,
+  .timeline-start {
     display: none;
   }
 
-  .about-image {
-    margin-top: 0;
-    text-align: center;
+  .timeline-info {
+    margin-bottom: 30px;
+  }
+
+  .language {
+    padding-right: 5px;
   }
 
   .cover-photo {
-    max-width: 50%;
+    max-width: 75%;
   }
 
-  .contact-card {
-    padding-bottom: 20px;
-  }
 }

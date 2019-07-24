@@ -1,0 +1,52 @@
+- id:          imprint
+  translation: "Impressum"
+- id:          privacy
+  translation: "Datenschutz"
+- id:          download_pdf
+  translation: "Download CV (PDF)"
+- id:          download_word
+  translation: "Download CV (Word)"
+- id:          show_dark_mode
+  translation: "Dunkler Modus"
+- id:          show_light_mode
+  translation: "Heller Modus"
+- id:          menu_about
+  translation: "Über mich"
+- id:          menu_work
+  translation: "Erfahrung"
+- id:          menu_skills
+  translation: "Skills"
+- id:          menu_contact
+  translation: "Kontakt"
+- id:          work_title
+  translation: "Erfahrung"
+- id:          contact_title
+  translation: "Kontakt"
+- id:          contact_work_together
+  translation: "Interessiert an einer Zusammenarbeit?"
+- id:          email
+  translation: "E-Mail"
+- id:          contact_your_mail
+  translation: "Ihre E-Mail"
+- id:          name
+  translation: "Name"
+- id:          contact_your_name
+  translation: "Ihr Name"
+- id:          message
+  translation: "Nachricht"
+- id:          contact_your_message
+  translation: "Ihre Nachricht"
+- id:          contact_submit
+  translation: "Absenden"
+- id:          education_title
+  translation: "Ausbildung"
+- id:          education_thesis
+  translation: "Abschlussarbeit"
+- id:          languages_title
+  translation: "Sprachen"
+- id:          open
+  translation: "Öffnen"
+- id:          skills_title
+  translation: "Skills"
+- id:          back_to_top
+  translation: "Nach oben"

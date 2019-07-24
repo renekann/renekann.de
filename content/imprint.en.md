@@ -1,8 +1,12 @@
++++
+type = "page"
++++
 # Imprint
 ## Information according to §5 TMG:
-René Kann Prenzlauer Allee 44 10405 Berlin
+René Kann  
+Prenzlauer Allee 44  
+10405 Berlin
 
-## Contact:
 [hello@renekann.de](mailto:hello@renekann.de)  
 www.renekann.de  
 [+49 160 4421713](tel:+491604421713) 

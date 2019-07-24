@@ -736,7 +736,7 @@
           <w:rPr>
             <w:sz-cs w:val="20" />
           </w:rPr>
-          <w:t>I am a software engineer with many years of experience for iOS and web, including knowledge of the &quot;full-stack&quot; of web technologies for frontend and backend services.</w:t>
+          <w:t>Ich bin ein Software-Ingenieur mit langjähriger Erfahrung für iOS und Web, einschließlich der Kenntnisse des &quot;Full-Stacks&quot; von Web-Technologien für Frontend- und Backend-Services.</w:t>
         </w:r>
       </w:p>
       <wx:sub-section>
@@ -786,7 +786,7 @@
           <w:sz-cs w:val="20"/>
         </w:rPr>
       </w:pPr>
-      <w:r><w:rPr></w:rPr><w:t>Maintained an app for a large multinational corporation of nonalcoholic beverage concentrates which was used by a large group of sales representatives in Europe. The app was highly reactive, connected to Salesforce backend and used Couchbase lite for local persistence. I migrated the app and related frameworks to Swift 4.2 and gave architectural decisions and recommendations.</w:t></w:r>
+      <w:r><w:rPr></w:rPr><w:t>Ich betreute eine App für einen multinationalen Konzern von alkoholfreien Getränkekonzentraten, die von einer großen Gruppe von Vertriebsmitarbeitern in Europa verwendet wurde. Die App war äußerst reaktiv, mit einem Salesforce-Backend verbunden und verwendete Couchbase Lite für die lokale Persistenz. Ich habe die App und die zugehörigen Frameworks auf Swift 4.2 migriert und Architekturentscheidungen und -empfehlungen gegeben.</w:t></w:r>
     </w:p>
 
     <w:p wsp:rsidR="00C146CA" wsp:rsidRDefault="009452CA" wsp:rsidP="00C146CA">
@@ -802,7 +802,7 @@
           <w:sz-cs w:val="20"/>
         </w:rPr>
       </w:pPr>
-      <w:r><w:rPr></w:rPr><w:t>Salesforce SDK / Salesforce with iOS</w:t></w:r>
+      <w:r><w:rPr></w:rPr><w:t>Salesforce SDK / Salesforce mit iOS</w:t></w:r>
     </w:p>
     <w:p wsp:rsidR="00C146CA" wsp:rsidRDefault="009452CA" wsp:rsidP="00C146CA">
       <w:pPr>
@@ -817,7 +817,7 @@
           <w:sz-cs w:val="20"/>
         </w:rPr>
       </w:pPr>
-      <w:r><w:rPr></w:rPr><w:t>Used Couchbase lite for local persistence</w:t></w:r>
+      <w:r><w:rPr></w:rPr><w:t>Couchbase lite für lokale Persistenz</w:t></w:r>
     </w:p>
     <w:p wsp:rsidR="00C146CA" wsp:rsidRDefault="009452CA" wsp:rsidP="00C146CA">
       <w:pPr>
@@ -832,7 +832,7 @@
           <w:sz-cs w:val="20"/>
         </w:rPr>
       </w:pPr>
-      <w:r><w:rPr></w:rPr><w:t>International Team</w:t></w:r>
+      <w:r><w:rPr></w:rPr><w:t>Internationales Team</w:t></w:r>
     </w:p>
 
   </wx:sub-section>
@@ -873,7 +873,7 @@
           <w:sz-cs w:val="20"/>
         </w:rPr>
       </w:pPr>
-      <w:r><w:rPr></w:rPr><w:t>Working in an English speaking environment I supported with test-driven implementation of a complete new feature for multi provider registration. Did the architectural decisions and recommendations, gave a workshop about introducing testability for the overall project and helped migrating from Objective-C to Swift 4.x</w:t></w:r>
+      <w:r><w:rPr></w:rPr><w:t>Ich arbeitete in einer englischsprachigen Umgebung und unterstützte die testgetriebene Implementierung einer komplett neuen Funktion für die Registrierung bei mehreren Anbietern. Des Weiteren habe ich Architekturentscheidungen und -empfehlungen getroffen, einen Workshop zur Einführung der Testbarkeit für das Gesamtprojekt gegeben und dabei geholfen, von Objective-C auf Swift 4.x zu migrieren</w:t></w:r>
     </w:p>
 
     <w:p wsp:rsidR="00C146CA" wsp:rsidRDefault="009452CA" wsp:rsidP="00C146CA">
@@ -889,7 +889,7 @@
           <w:sz-cs w:val="20"/>
         </w:rPr>
       </w:pPr>
-      <w:r><w:rPr></w:rPr><w:t>Introduced testability and gave workshop about testing</w:t></w:r>
+      <w:r><w:rPr></w:rPr><w:t>Führte Tests für das Projekt ein, Workshop zu UnitTests</w:t></w:r>
     </w:p>
     <w:p wsp:rsidR="00C146CA" wsp:rsidRDefault="009452CA" wsp:rsidP="00C146CA">
       <w:pPr>
@@ -904,7 +904,7 @@
           <w:sz-cs w:val="20"/>
         </w:rPr>
       </w:pPr>
-      <w:r><w:rPr></w:rPr><w:t>International Team</w:t></w:r>
+      <w:r><w:rPr></w:rPr><w:t>Internationales Team</w:t></w:r>
     </w:p>
     <w:p wsp:rsidR="00C146CA" wsp:rsidRDefault="009452CA" wsp:rsidP="00C146CA">
       <w:pPr>
@@ -919,7 +919,7 @@
           <w:sz-cs w:val="20"/>
         </w:rPr>
       </w:pPr>
-      <w:r><w:rPr></w:rPr><w:t>Migration from Objective-C to Swift</w:t></w:r>
+      <w:r><w:rPr></w:rPr><w:t>Migration von Objective-C zu Swift</w:t></w:r>
     </w:p>
 
   </wx:sub-section>
@@ -960,7 +960,7 @@
           <w:sz-cs w:val="20"/>
         </w:rPr>
       </w:pPr>
-      <w:r><w:rPr></w:rPr><w:t>Working in an English speaking environment I supported with test-driven implementation of new product functions using Swift / Objective-C and MVVM, MVP in biweekly sprints for the ImmobilienScout24 App. I also consulted in evaluation of new product ideas, feasibility study to connect external service providers.</w:t></w:r>
+      <w:r><w:rPr></w:rPr><w:t>In einem englischsprachigen Umfeld unterstützte ich die testgetriebene Implementierung neuer Produktfunktionen mit Swift / Objective-C und MVVM, MVP in zweiwöchentlichen Sprints für die ImmobilienScout24 App. Ich habe auch bei der Bewertung neuer Produktideen und der Durchführbarkeitsstudie zur Vernetzung externer Dienstleister mitgewirkt.</w:t></w:r>
     </w:p>
 
     <w:p wsp:rsidR="00C146CA" wsp:rsidRDefault="009452CA" wsp:rsidP="00C146CA">
@@ -976,7 +976,7 @@
           <w:sz-cs w:val="20"/>
         </w:rPr>
       </w:pPr>
-      <w:r><w:rPr></w:rPr><w:t>Implemented new feature to generate realtor leads</w:t></w:r>
+      <w:r><w:rPr></w:rPr><w:t>Umsetzung einer neuen Funktion zur Vermittlung</w:t></w:r>
     </w:p>
     <w:p wsp:rsidR="00C146CA" wsp:rsidRDefault="009452CA" wsp:rsidP="00C146CA">
       <w:pPr>
@@ -1047,7 +1047,7 @@
           <w:sz-cs w:val="20"/>
         </w:rPr>
       </w:pPr>
-      <w:r><w:rPr></w:rPr><w:t>Support in maintaining an iOS app for a leading German multinational automotive company. Implemented new features in weekly sprints, performed code reviews and refactored several parts of the app to reduce technical debt. I also implemented an app (from scratch) for visitors of congresses to manage their favorite lectures, asking questions to the referents and reviewing the whole event agenda. The app uses Google Firebase as backend, the main architecture is built upon MVVM and set its focus upon offline capabilities to deal with bad network coverage.</w:t></w:r>
+      <w:r><w:rPr></w:rPr><w:t>Unterstützung bei der Pflege einer iOS-App für ein führendes deutsches multinationales Automobilunternehmen. Ich implementierte neue Funktionen in wöchentlichen Sprints, führte Code Reviews durch und überarbeitete mehrere Teile der App, um die „technical Dept“ zu reduzieren. Des Weiteren habe ich eine App (von Grund auf neu) für Besucher von Kongressen implementiert, um Vorträge zu verwalten, Fragen an die Referenten zu stellen und Zugriff auf das gesamte Veranstaltungsprogramm zu erhalten. Die App verwendet Google Firebase als Back-End. Die Hauptarchitektur basiert auf MVVM und konzentriert sich auf Offline-Funktionen, um auch bei schlechten Netzwerkbedingungen zu funktionieren.</w:t></w:r>
     </w:p>
 
     <w:p wsp:rsidR="00C146CA" wsp:rsidRDefault="009452CA" wsp:rsidP="00C146CA">
@@ -1063,7 +1063,7 @@
           <w:sz-cs w:val="20"/>
         </w:rPr>
       </w:pPr>
-      <w:r><w:rPr></w:rPr><w:t>Maintained app for automotive environment</w:t></w:r>
+      <w:r><w:rPr></w:rPr><w:t>Pflege einer App für Automobilunternehmen</w:t></w:r>
     </w:p>
     <w:p wsp:rsidR="00C146CA" wsp:rsidRDefault="009452CA" wsp:rsidP="00C146CA">
       <w:pPr>
@@ -1078,7 +1078,7 @@
           <w:sz-cs w:val="20"/>
         </w:rPr>
       </w:pPr>
-      <w:r><w:rPr></w:rPr><w:t>Mentoring mobile developers</w:t></w:r>
+      <w:r><w:rPr></w:rPr><w:t>Mentoring von mobilen Entwicklern</w:t></w:r>
     </w:p>
     <w:p wsp:rsidR="00C146CA" wsp:rsidRDefault="009452CA" wsp:rsidP="00C146CA">
       <w:pPr>
@@ -1093,7 +1093,7 @@
           <w:sz-cs w:val="20"/>
         </w:rPr>
       </w:pPr>
-      <w:r><w:rPr></w:rPr><w:t>Build swift app for dentist exhibition from scratch</w:t></w:r>
+      <w:r><w:rPr></w:rPr><w:t>Erstellung einer App für Zahnarzt-Kongresse mit Swift und Firebase</w:t></w:r>
     </w:p>
 
   </wx:sub-section>
@@ -1134,7 +1134,7 @@
           <w:sz-cs w:val="20"/>
         </w:rPr>
       </w:pPr>
-      <w:r><w:rPr></w:rPr><w:t>Technical lead and manager of various projects for well-known, multinational clients (e.g. Daimler AG, Mercedes-Benz Museum, Autostadt / Porsche AG). I implemented iOS apps as lead developer as part of a team with varying sizes like the Daimler AG Entertainment app, the Daimler AG Jobs app, an app for the Porsche AG for the new opened Porsche pavilion at the Autostadt Wolfsburg. Besides, I lead the development team and optimized the processes and procedures of the development stack.</w:t></w:r>
+      <w:r><w:rPr></w:rPr><w:t>Technischer Leiter und Leiter verschiedener Projekte für namhafte, multinationale Kunden (z. B. Daimler AG, Mercedes-Benz Museum, Autostadt / Porsche AG). Als Hauptentwickler habe ich iOS-Apps in unterschiedlich großen Teams implementiert, wie die Daimler AG Entertainment App, die Daimler AG Jobs App, eine App für die Porsche AG für den neu eröffneten Porsche-Pavillon in der Autostadt Wolfsburg. Außerdem leitete ich das Entwicklungsteam und optimierte die Prozesse und Abläufe des Entwicklungsteams.</w:t></w:r>
     </w:p>
 
 
@@ -1176,7 +1176,7 @@
           <w:sz-cs w:val="20"/>
         </w:rPr>
       </w:pPr>
-      <w:r><w:rPr></w:rPr><w:t>We implemented rich internet applications (RIA) with Flash, Flex and web applications for various national clients. Main focus was developing customized content management systems and individual web apps.</w:t></w:r>
+      <w:r><w:rPr></w:rPr><w:t>Wir haben Rich-Internet-Anwendungen (RIA) mit Flash-, Flex- und Web-Anwendungen für verschiedene nationale Kunden implementiert. Schwerpunkte waren die Entwicklung maßgeschneiderter Content-Management-Systeme und individueller Web-Applikationen.</w:t></w:r>
     </w:p>
 
 
@@ -1192,7 +1192,7 @@
         </w:tabs>
       </w:pPr>
       <w:r wsp:rsidR="00C146CA" wsp:rsidRPr="00C146CA">
-        <w:t>Freelance Idea Engineering, </w:t>
+        <w:t>Freelancer Ideen-Entwicklung, </w:t>
       </w:r>
       <w:hlink w:dest="http://www.zephram.de">
         <w:r wsp:rsidR="009452CA" wsp:rsidRPr="00606071">
@@ -1218,7 +1218,7 @@
           <w:sz-cs w:val="20"/>
         </w:rPr>
       </w:pPr>
-      <w:r><w:rPr></w:rPr><w:t>I worked as idea engineer for the Zephram GbR, moderated workshops and developed product ideas.</w:t></w:r>
+      <w:r><w:rPr></w:rPr><w:t>Ich arbeitete als Ideen-Ingenieur für die Zephram GbR, moderierte Workshops und entwickelte Produktideen.</w:t></w:r>
     </w:p>
 
 
@@ -1234,7 +1234,7 @@
         </w:tabs>
       </w:pPr>
       <w:r wsp:rsidR="00C146CA" wsp:rsidRPr="00C146CA">
-        <w:t>Freelancer for RIA and Web Development, </w:t>
+        <w:t>Freelancer für RIA und Web Development, </w:t>
       </w:r>
       <w:hlink w:dest="http://www.schroeder-wendt.de">
         <w:r wsp:rsidR="009452CA" wsp:rsidRPr="00606071">
@@ -1260,7 +1260,7 @@
           <w:sz-cs w:val="20"/>
         </w:rPr>
       </w:pPr>
-      <w:r><w:rPr></w:rPr><w:t>Implemented rich internet applications (RIA) with Flash, Flex and Silverlight and web applications for various larger clients. Created a prototype of a possible online video analyzing and editing tool with Silverlight for a presentation at the Cebit 2012 together with Microsoft.</w:t></w:r>
+      <w:r><w:rPr></w:rPr><w:t>Ich implementierte Rich-Internet-Anwendungen (RIA) mit Flash, Flex und Silverlight sowie Webanwendungen für verschiedene größere Clients. Mittels Silverlight habe ich einen Prototyp eines möglichen Online-Tools zur Videoanalyse und -bearbeitung für eine Präsentation zur Cebit 2012 zusammen mit Microsoft erstellt.</w:t></w:r>
     </w:p>
 
 
@@ -1421,7 +1421,7 @@
         <w:rPr>
           <w:sz-cs w:val="20"/>
         </w:rPr>
-        <w:t>Computational visualistics, Dipl.-Ing.</w:t>
+        <w:t>Computervisualistik, Schwerpunkt Maschinenbau, Dipl.-Ing.</w:t>
       </w:r>
     </w:p>
 
@@ -1452,7 +1452,7 @@
         </w:tabs>
       </w:pPr>
       <w:r wsp:rsidR="00C146CA" wsp:rsidRPr="00C146CA">
-        <w:t>Organisation, Presentation, </w:t>
+        <w:t>Organisation, Präsentation, </w:t>
       </w:r>
       
         <w:r wsp:rsidR="009452CA" wsp:rsidRPr="00606071">
@@ -1475,7 +1475,7 @@
           <w:sz-cs w:val="20"/>
         </w:rPr>
       </w:pPr>
-      <w:r><w:rPr></w:rPr><w:t>Co-Organized a monthly meetup with up to 100 visitors related to web and mobile technologies at startups and organizations.</w:t></w:r>
+      <w:r><w:rPr></w:rPr><w:t>Ich organisierte ein monatliches Treffen mit bis zu 100 Besuchern, die sich mit Web- und Mobiltechnologien bei Startups und Organisationen befassten.</w:t></w:r>
     </w:p>
 
 
@@ -1509,7 +1509,7 @@
           <w:rPr>
             <w:rStyle w:val="Hyperlink"/>
           </w:rPr>
-          <w:t>Master Thesis</w:t>
+          <w:t>Diplomarbeit</w:t>
         </w:r>
       </w:hlink>
       <w:r wsp:rsidR="00EA0B64">
@@ -1528,7 +1528,7 @@
           <w:sz-cs w:val="20"/>
         </w:rPr>
       </w:pPr>
-      <w:r><w:rPr></w:rPr><w:t>Acceleration of computerized decision making processes with pairwise comparisons based on sorting algorithms.</w:t></w:r>
+      <w:r><w:rPr></w:rPr><w:t>Beschleunigung von computergestützten Bewertungsprozessen mit Paarvergleichen auf Basis von Sortierverfahren</w:t></w:r>
     </w:p>
 
 
@@ -1568,7 +1568,7 @@
     </w:p>
     <w:p wsp:rsidR="00C146CA" wsp:rsidRPr="005C4700" wsp:rsidRDefault="00C146CA" wsp:rsidP="005C4700">
       <w:r wsp:rsidRPr="005C4700">
-        <w:t>Native or bilingual proficiency</w:t>
+        <w:t>Muttersprache oder Zweisprachig</w:t>
       </w:r>
     </w:p>
   </wx:sub-section>
@@ -1588,7 +1588,7 @@
     </w:p>
     <w:p wsp:rsidR="00C146CA" wsp:rsidRPr="005C4700" wsp:rsidRDefault="00C146CA" wsp:rsidP="005C4700">
       <w:r wsp:rsidRPr="005C4700">
-        <w:t>Professional working proficiency</w:t>
+        <w:t>Verhandlungssicher</w:t>
       </w:r>
     </w:p>
   </wx:sub-section>
@@ -1608,7 +1608,7 @@
     </w:p>
     <w:p wsp:rsidR="00C146CA" wsp:rsidRPr="005C4700" wsp:rsidRDefault="00C146CA" wsp:rsidP="005C4700">
       <w:r wsp:rsidRPr="005C4700">
-        <w:t>Elementary proficiency</w:t>
+        <w:t>Grundkenntnisse</w:t>
       </w:r>
     </w:p>
   </wx:sub-section>

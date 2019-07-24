@@ -1,38 +1,37 @@
 baseURL = "/"
-languageCode = "en-us"
 theme = "renekann.de"
-DefaultContentLanguage = "en"
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = true
 
 [languages]
   [languages.en]
-    title = "René Kann - Senior iOS Developer / Mobile developer in Berlin"
+    languageName = "EN"
+    weight = 1
+    contactEndpoint = "https://app.99inbound.com/api/e/Yt0LOhWn"
+    honeypot = "excellent_taupe_satin_toad"
   [languages.de]
-    title = "René Kann - Senior iOS Developer / Mobile developer in Berlin"
-
+    languageName = "DE"
+    weight = 2
+    contactEndpoint = "https://app.99inbound.com/api/e/09UD9P5C"
+    honeypot = "free_range_coral_houndstooth_sand"
+    
 [params]
+  title = "René Kann - Senior iOS Developer / Mobile developer in Berlin"
   favicon = "favicon.png"
-  logo = "logo.png"
     
 [params.nav]
   enable = true
 
 [params.profile]
   enable = true
-  resume = "resume.pdf"
-  resume_word ="resume-word.doc"
-  title_menu = "About"
   anchor = "about"
 
 [params.skills]
   enable = true
-  title = "Skills"
-  title_menu = "Skills"
   anchor = "skills"
 
 [params.work]
   enable = true
-  title = "My Work"
-  title_menu = "Work"
   anchor = "work"
   
 [params.services]
@@ -43,18 +42,13 @@ DefaultContentLanguage = "en"
 [params.languages]
   enable = true
   title = "Languages"
-  title_menu = "Languages"
 
 [params.education]
   enable = true
   title = "Education"
-  title_menu = "Education"
   
 [params.contact]
   enable = true
-  title = "Contact"
-  title_menu = "Contact"
-  working_together = "Interested to work together? Let's talk"
   anchor = "contact"
 
 [params.footer]

@@ -1,7 +1,8 @@
----
-redirectURL: "/"
-redirectTime: 5
----
++++
+type = "page"
+redirectURL = "/"
+redirectTime = 5
++++
 # Thank you!
 
 Thanks for your message.  

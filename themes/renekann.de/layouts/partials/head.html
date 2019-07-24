@@ -1,0 +1,47 @@
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="format-detection" content="date=no">
+<meta name="format-detection" content="telephone=no">
+<title>{{ block "title" . }}
+  {{ .Site.Params.Title }}
+  {{ end }}
+</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="theme-color" content="{{ .Site.Params.theme_color }}">
+<meta name="description" content="{{ .Site.Params.Description }}">
+<meta property="og:description" content="{{ .Site.Params.Description }}">
+<meta name="twitter:description" content="{{ .Site.Params.Description }}">
+<meta property="og:image" content="{{ .Site.BaseURL }}img/{{ .Site.Params.description_photo }}">
+<meta name="twitter:image" content="{{ .Site.BaseURL }}img/{{ .Site.Params.description_photo }}">
+<link rel="icon" href="{{ .Site.BaseURL }}img/{{ .Site.Params.Favicon }}" type="image/x-icon">
+<link rel="shortcut icon" href="{{ .Site.BaseURL }}img/{{ .Site.Params.Favicon }}" type="image/x-icon">
+<link rel="stylesheet" href="{{ .Site.BaseURL }}css/bootstrap.min.css">
+<link rel="stylesheet" href="{{ .Site.BaseURL }}css/style.min.css">
+<link rel="stylesheet" href="{{ .Site.BaseURL }}css/all.min.css">
+<!-- Matomo -->
+<script type="text/javascript">
+  var _paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
+  _paq.push(["setCookieDomain", "*.www.renekann.de"]);
+  _paq.push(["setDomains", ["*.www.renekann.de"]]);
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u = "//piwik.soraxdesign.de/";
+    _paq.push(['setTrackerUrl', u + 'matomo.php']);
+    _paq.push(['setSiteId', '5']);
+    var d = document,
+      g = d.createElement('script'),
+      s = d.getElementsByTagName('script')[0];
+    g.type = 'text/javascript';
+    g.async = true;
+    g.defer = true;
+    g.src = u + 'matomo.js';
+    s.parentNode.insertBefore(g, s);
+  })();
+</script>
+<noscript>
+  <p><img src="//piwik.soraxdesign.de/matomo.php?idsite=5&amp;rec=1" style="border:0;" alt="" /></p>
+</noscript>
+<!-- End Matomo Code -->

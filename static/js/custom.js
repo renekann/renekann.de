@@ -29,18 +29,23 @@
   }
 
   function activateDarkMode() {
+    localStorage.setItem("colormode", "dark");
     $("body").addClass("dark-mode");
     $(".color-mode-icon").addClass("active");
-    $(".color-mode-text").html("Show light mode");
+    $(".color-mode-text-dark").addClass("active");
+    $(".color-mode-text-light").removeClass("active");
+
     $(".color-mode-icon")
       .removeClass("fa-moon")
       .addClass("fa-sun");
   }
 
   function activateLightMode() {
+    localStorage.setItem("colormode", "light");
     $("body").removeClass("dark-mode");
     $(".color-mode-icon").removeClass("active");
-    $(".color-mode-text").html("Show dark mode");
+    $(".color-mode-text-light").addClass("active");
+    $(".color-mode-text-dark").removeClass("active");
     $(".color-mode-icon")
       .removeClass("fa-sun")
       .addClass("fa-moon");
@@ -49,11 +54,18 @@
   $(function() {
     $(".nav-link, .custom-btn-link, .footer-link").on("click", function(event) {
       var $anchor = $(this);
+      var href =
+        "#" +
+        $anchor
+          .attr("href")
+          .split("#")
+          .pop();
+
       $("html, body")
         .stop()
         .animate(
           {
-            scrollTop: $($anchor.attr("href")).offset().top - 49
+            scrollTop: $(href).offset().top - 55
           },
           1000
         );
@@ -64,6 +76,8 @@
   $(".social-links a").tooltip();
 
   function setColorScheme() {
+    var colormodePreference = localStorage.getItem("colormode");
+
     const shouldUseDarkMode = window.matchMedia("(prefers-color-scheme: dark)")
       .matches;
     const shouldUseLightMode = window.matchMedia(
@@ -92,7 +106,12 @@
       if (hour < 4 || hour >= 16) {
         activateDarkMode();
       } else {
-        activateLightMode();
+        if (colormodePreference != undefined) {
+          if (colormodePreference == "dark") activateDarkMode();
+          if (colormodePreference == "light") activateLightMode();
+        } else {
+          activateLightMode();
+        }
       }
     }
   }

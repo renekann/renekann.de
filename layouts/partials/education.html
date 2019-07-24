@@ -2,12 +2,13 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-12">
-        <h1>{{ .Site.Params.education.Title }}</h1>
+        <h1>{{ i18n "education_title" }}</h1>
       </div>
     </div>
     <div class="row">
-      {{ range $.Site.Data }}
-      {{ range .education }}
+      {{ $data := index .Site.Data .Site.Language.Lang }}
+      {{ $resume := $data.resume }}
+      {{ range $resume.education }}
       <div class="col-12">
         <p class="work-date">
           <small>{{ dateFormat "01/2006" .startDate }} - {{ dateFormat "01/2006" .endDate }}</small>
@@ -20,15 +21,12 @@
       <div class="col-12">
         <p>
           {{ $gpa := .gpa }}
-          {{ range $.Site.Data }}
-          {{ range .publications }}
-          <strong>Thesis:</strong> {{ .summary }}
-          <span class="thesis-link-gpa">(grade {{ $gpa }}) <a href="{{ .website }}">open</a></span>
-          {{ end }}
+          {{ range $resume.publications }}
+          <strong>{{ i18n "education_thesis" }}:</strong> {{ .summary }}
+          <span class="thesis-link-gpa">(grade {{ $gpa }}) <a href="{{ .website }}">{{ i18n "open" }}</a></span>
           {{ end }}
         </p>
       </div>
-      {{ end }}
       {{ end }}
     </div>
   </div>

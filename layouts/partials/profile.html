@@ -1,9 +1,11 @@
+{{ $data := index .Site.Data .Site.Language.Lang }}
+{{ $resume := $data.resume }}
 <section class="about d-lg-flex justify-content-center align-items-center" id="{{ .Site.Params.profile.anchor }}">
   <div class="container">
     <div class="row">
       <div class="col-lg-3 col-md-12 col-12">
         <div class="about-image">
-          <img src="{{ .Site.BaseURL }}img/{{ .Params.Avatar }}" class="img-fluid cover-photo">
+          <img src="/img/{{ .Params.Avatar }}" class="img-fluid cover-photo">
         </div>
       </div>
       <div class="col-lg-9 col-md-12 col-12">
@@ -17,10 +19,10 @@
           <span class="animated-info">
           </span>
         </h1>
-        <p>{{ .Site.Data.resume.basics.summary }}</p>
+        <p>{{ $resume.basics.summary }}</p>
         <div class="custom-btn-group mt-4">
-          <a href="{{ .Params.resume_pdf }}" class="btn mr-lg-2 custom-btn custom-btn-bg resume-btn"><i class='resume-icon far fa-file-pdf fa-lg'></i> Download Resume (PDF)</a>
-          <a href="{{ .Params.resume_doc }}" class="btn mr-lg-2 custom-btn custom-btn-bg-light"><i class='resume-icon far fa-file-word fa-lg'></i> Download Resume (Word)</a>
+          <a href="/{{ .Params.resume_pdf }}" class="btn mr-lg-2 custom-btn custom-btn-bg resume-btn"><i class='resume-icon far fa-file-pdf fa-lg'></i> {{ i18n "download_pdf" }}</a>
+          <a href="/{{ .Params.resume_doc }}" class="btn mr-lg-2 custom-btn custom-btn-bg-light"><i class='resume-icon far fa-file-word fa-lg'></i> {{ i18n "download_word" }}</a>
         </div>
       </div>
     </div>
@@ -28,7 +30,7 @@
       <div class="col-lg-9 offset-lg-3">
         <div class="about-long-text">
           <p>
-            {{ .Site.Data.resume.basics.longSummary }}
+            {{ $resume.basics.longSummary }}
           </p>
           <h2>{{ .Params.what_i_can_help_title }}</h2>
           <p>

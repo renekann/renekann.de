@@ -2,14 +2,15 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-12">
-        <h1>{{ .Site.Params.contact.Title }}</h1>
+        <h1>{{ i18n "contact_title" }}</h1>
       </div>
     </div>
     <div class="row">
-      {{ $resume := .Site.Data.resume }}
-      {{ $location := .Site.Data.resume.basics.location }}
+      {{ $data := index .Site.Data .Site.Language.Lang }}
+      {{ $resume := $data.resume }}
+      {{ $location := $resume.basics.location }}
       <div class="col-lg-6 contact-card">
-        <h3>René Kann</h3>
+        <h3>{{ $resume.basics.name }}</h3>
         <h4>{{ $resume.basics.label }}</h4>
         <ul>
           <li><a href="mailto:{{ $resume.basics.email }}">{{ $resume.basics.email }}</a></li>
@@ -17,24 +18,22 @@
           <li>{{ $location.address }}, {{ $location.postalCode }} {{ $location.city }} </li>
         </ul>
         <p>
-          {{ range where $resume.basics.profiles "network" "Twitter" }}
-          <a href="{{ .url }}" target="blank" class="custom-btn custom-btn-social custom-btn-bg-light">
-            <i class="fab fa-twitter fa-lg"></i>
-          </a>
+          {{ range $resume.basics.profiles }}
+          {{ $scratch := newScratch }}
+          {{ if eq .network "Twitter" }}
+          {{ $scratch.Set "icon" "twitter" }}
           {{ end }}
-          {{ range where $resume.basics.profiles "network" "LinkedIn" }}
-          <a href="{{ .url }}" target="blank" class="custom-btn custom-btn-social custom-btn-bg-light">
-            <i class="fab fa-linkedin fa-lg"></i>
-          </a>
+          {{ if eq .network "LinkedIn" }}
+          {{ $scratch.Set "icon" "linkedin" }}
           {{ end }}
-          {{ range where $resume.basics.profiles "network" "GitHub" }}
-          <a href="{{ .url }}" target="blank" class="custom-btn custom-btn-social custom-btn-bg-light">
-            <i class="fab fa-github fa-lg"></i>
-          </a>
+          {{ if eq .network "GitHub" }}
+          {{ $scratch.Set "icon" "github" }}
           {{ end }}
-          {{ range where $resume.basics.profiles "network" "Stackoverflow" }}
+          {{ if eq .network "Stackoverflow" }}
+          {{ $scratch.Set "icon" "stack-overflow" }}
+          {{ end }}
           <a href="{{ .url }}" target="blank" class="custom-btn custom-btn-social custom-btn-bg-light">
-            <i class="fab fa-stack-overflow fa-lg"></i>
+            <i class='fab fa-{{ $scratch.Get "icon" }} fa-lg'></i>
           </a>
           {{ end }}
           <a href="vcard.vcf" target="blank" class="custom-btn custom-btn-social custom-btn-bg-light">
@@ -42,24 +41,24 @@
         </p>
       </div>
       <div class="col-lg-6">
-        <h3>{{ .Site.Params.contact.working_together }}</h3>
-        <form action="https://app.99inbound.com/api/e/Yt0LOhWn" method="post">
+        <h3>{{ i18n "contact_work_together" }}</h3>
+        <form action="{{ .Site.Params.contactEndpoint }}" method="post">
           <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" class="form-control" name="email" placeholder="Your email" required>
+            <label for="email">{{ i18n "email" }}</label>
+            <input type="email" class="form-control" name="email" placeholder="{{ i18n "contact_your_mail" }}" required>
           </div>
           <div class="form-group">
-            <label for="exampleInputPassword1">Name</label>
-            <input type="text" class="form-control" name="name" placeholder="Your Name" required>
+            <label for="exampleInputPassword1">{{ i18n "name" }}</label>
+            <input type="text" class="form-control" name="name" placeholder="{{ i18n "contact_your_name" }}" required>
           </div>
           <div class="form-group">
-            <label for="message">Message</label>
-            <textarea class="form-control" name="message" rows="3" placeholder="Your message" required></textarea>
+            <label for="message">{{ i18n "message" }}</label>
+            <textarea class="form-control" name="message" rows="3" placeholder="{{ i18n "contact_your_message" }}" required></textarea>
           </div>
           <div style="position: absolute; left: -5000px;">
-            <input type="checkbox" name="excellent_taupe_satin_toad" value="1" tabindex="-1" autocomplete="no">
+            <input type="checkbox" name="{{ .Site.Params.honeypot }}" value="1" tabindex="-1" autocomplete="no">
           </div>
-          <button type="submit" class="btn custom-btn custom-btn-bg">Submit</button>
+          <button type="submit" class="btn custom-btn custom-btn-bg">{{ i18n "contact_submit" }}</button>
         </form>
       </div>
     </div>

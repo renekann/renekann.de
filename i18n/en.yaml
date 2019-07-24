@@ -1,0 +1,52 @@
+- id:          imprint
+  translation: "Imprint"
+- id:          privacy
+  translation: "Data privacy"
+- id:          download_pdf
+  translation: "Download Resume (PDF)"
+- id:          download_word
+  translation: "Download Resume (Word)"
+- id:          show_dark_mode
+  translation: "Show dark mode"
+- id:          show_light_mode
+  translation: "Show light mode"
+- id:          menu_about
+  translation: "About"
+- id:          menu_work
+  translation: "Work"
+- id:          menu_skills
+  translation: "Skills"
+- id:          menu_contact
+  translation: "Contact"
+- id:          work_title
+  translation: "Work"
+- id:          contact_title
+  translation: "Contact"
+- id:          contact_work_together
+  translation: "Interested to work together? Let's talk"
+- id:          email
+  translation: "E-Mail"
+- id:          contact_your_mail
+  translation: "Your e-mail"
+- id:          name
+  translation: "Name"
+- id:          contact_your_name
+  translation: "Your name"
+- id:          message
+  translation: "Message"
+- id:          contact_your_message
+  translation: "Your message"
+- id:          contact_submit
+  translation: "Submit"
+- id:          education_title
+  translation: "Education"
+- id:          education_thesis
+  translation: "Thesis"
+- id:          languages_title
+  translation: "Languages"
+- id:          open
+  translation: "Open"
+- id:          skills_title
+  translation: "Skills"
+- id:          back_to_top
+  translation: "Back to top"
