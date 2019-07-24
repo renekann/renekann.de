@@ -30,8 +30,7 @@
 
   function activateDarkMode() {
     localStorage.setItem("colormode", "dark");
-    $("body").addClass("dark-mode");
-    $(".color-mode-icon").addClass("active");
+    document.body.classList.add("dark-mode");
     $(".color-mode-text-dark").addClass("active");
     $(".color-mode-text-light").removeClass("active");
 
@@ -42,7 +41,7 @@
 
   function activateLightMode() {
     localStorage.setItem("colormode", "light");
-    $("body").removeClass("dark-mode");
+    document.body.classList.remove("dark-mode");
     $(".color-mode-icon").removeClass("active");
     $(".color-mode-text-light").addClass("active");
     $(".color-mode-text-dark").removeClass("active");

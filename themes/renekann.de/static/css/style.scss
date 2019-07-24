@@ -256,7 +256,7 @@ li {
   transition      : transform 200ms linear;
   background-color: #fff;
   border-bottom   : 1px solid #efefef;
-  height          : 60px;
+  padding         : 15px;
 }
 
 .navbar-brand {
@@ -714,6 +714,11 @@ li {
     .piwik-frame {
       height: 200px;
     }
+  }
+
+  .color-mode-text-dark,
+  .color-mode-text-light {
+    display: none;
   }
 }
 
