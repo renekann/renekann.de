@@ -45,9 +45,7 @@
     $(".color-mode-icon").removeClass("active");
     $(".color-mode-text-light").addClass("active");
     $(".color-mode-text-dark").removeClass("active");
-    $(".color-mode-icon")
-      .removeClass("fa-sun")
-      .addClass("fa-moon");
+    $(".color-mode-icon").removeClass("fa-sun").addClass("fa-moon");
   }
 
   $(function() {
@@ -56,14 +54,13 @@
       var href =
         "#" +
         $anchor
-          .attr("href")
-          .split("#")
-          .pop();
+        .attr("href")
+        .split("#")
+        .pop();
 
       $("html, body")
         .stop()
-        .animate(
-          {
+        .animate({
             scrollTop: $(href).offset().top - 55
           },
           1000
@@ -86,8 +83,7 @@
       "(prefers-color-scheme: no-preference)"
     ).matches;
 
-    const hasNoSupport =
-      !shouldUseDarkMode && !shouldUseLightMode && !canUseNoPreference;
+    const hasNoSupport = !shouldUseDarkMode && !shouldUseLightMode && !canUseNoPreference;
 
     window
       .matchMedia("(prefers-color-scheme: dark)")
