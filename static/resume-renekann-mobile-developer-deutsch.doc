@@ -976,7 +976,7 @@
           <w:sz-cs w:val="20"/>
         </w:rPr>
       </w:pPr>
-      <w:r><w:rPr></w:rPr><w:t>Umsetzung einer neuen Funktion zur Vermittlung</w:t></w:r>
+      <w:r><w:rPr></w:rPr><w:t>Umsetzung eines neuen Features zur Maklervermittlung und Immobilienbewertung</w:t></w:r>
     </w:p>
     <w:p wsp:rsidR="00C146CA" wsp:rsidRDefault="009452CA" wsp:rsidP="00C146CA">
       <w:pPr>
@@ -1006,7 +1006,7 @@
           <w:sz-cs w:val="20"/>
         </w:rPr>
       </w:pPr>
-      <w:r><w:rPr></w:rPr><w:t>Migration from Objective-C to Swift</w:t></w:r>
+      <w:r><w:rPr></w:rPr><w:t>Migration von Objective-C zu Swift</w:t></w:r>
     </w:p>
 
   </wx:sub-section>
