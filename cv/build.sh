@@ -61,7 +61,7 @@ function main {
         i)  install $@ ;;
         c2f)  convert2fresh $@ ;;
         all)  all $@ ;;
-        *)      echo "Usage: $0 {build|up|down|log|sh}" ;;
+        *)      echo "Usage: $0 {word|pdf|i|c2f|all}" ;;
     esac
 }
 

@@ -42,6 +42,24 @@
   },
   "work": [
     {
+      "company": "BKK VBU",
+      "position": "Freelance Senior Software Consultant",
+      "website": "http://www.meine-krankenkasse.de",
+      "startDate": "2019-08-01",
+      "endDate": "2019-10-31",
+      "summary": "Support in the realization of (mobile) applications in the field of eHealth and the digitization of the healthcare system.",
+      "highlights": []
+    },
+    {
+      "company": "Paternity Leave",
+      "position": "Dad",
+      "website": "",
+      "startDate": "2019-06-01",
+      "endDate": "2019-07-31",
+      "summary": "Expanding the key skills bouncing, calming, encouraging, doing laundry and getting along with little sleep.",
+      "highlights": []
+    },
+    {
       "company": "Successyou GmbH",
       "position": "Freelance Senior iOS Developer + Consultant",
       "teaser": "Maintained B2B App for sales rep",

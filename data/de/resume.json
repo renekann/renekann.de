@@ -42,6 +42,24 @@
   },
   "work": [
     {
+      "company": "BKK VBU",
+      "position": "Freelance Senior Software Consultant",
+      "website": "http://www.meine-krankenkasse.de",
+      "startDate": "2019-08-01",
+      "endDate": "2019-10-31",
+      "summary": "Unterstützung bei der Realisierung von (mobilen) Anwendungen im Bereich eHealth und der Digitalisierung des Gesundheitswesens.",
+      "highlights": []
+    },
+    {
+      "company": "Elternzeit",
+      "position": "Dad",
+      "website": "",
+      "startDate": "2019-06-01",
+      "endDate": "2019-07-31",
+      "summary": "Ausbau der Schlüsselqualifikationen Schaukeln, Beruhigen, Ermutigen, Aufräumen und mit wenig Schlaf auskommen.",
+      "highlights": []
+    },
+    {
       "company": "Successyou GmbH",
       "position": "Freelance Senior iOS Developer + Consultant",
       "teaser": "Maintained B2B App for sales rep",
