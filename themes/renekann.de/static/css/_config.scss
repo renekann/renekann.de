@@ -1,0 +1,43 @@
+// VARIABLES
+$font-base: 'Roboto', sans-serif;
+
+$body-font-size: 18px;
+$h1-font-size: 34px;
+$h1-font-size-phone: 30px;
+$h2-font-size: 22px;
+$h3-font-size: 18px;
+$h4-font-size: 14px;
+$small-font-size: 14px;
+$link-font-size: 16px;
+
+$font-weight-bold: bold;
+$font-weight-normal: normal;
+$font-weight-light: 300;
+
+$h1-font-color: #212121;
+$h2-font-color: #353535;
+$h3-font-color: #484848;
+$h4-font-color: #484848;
+
+$body-font-color: #5b5b5b;
+$body-font-color-dark: #5b5b5b;
+
+$text-white: #ffffff;
+$dark-mode-color: #212121;
+$dark-mode-navbar-bg-color: #121212;
+$main-color: #6ab7ff;
+$main-color-dark: #0077c2;
+$border-color: #f2f2f1;
+$button-color: #474559;
+$href-color: #EFA00B;
+$href-color-dark: #EFA00B;
+$language-link-color: #d6d6d6;
+$timelime-line-color: #d6d6d6;
+$timelime-dot-color: #ffffff;
+$timelime-dot-border-color: $main-color; // phones only
+
+$screen-xs-min: 371px; // Small tablets and large smartphones (landscape view)
+$screen-sm-min: 576px; // Small tablets (portrait view)
+$screen-md-min: 768px; // Tablets and small desktops
+$screen-lg-min: 992px; // Large tablets and desktops
+$screen-xl-min: 1200px;

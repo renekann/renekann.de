@@ -7,8 +7,8 @@
     "phone": "0160 4421713",
     "degree": "",
     "website": "www.renekann.de",
-    "summary": "Ich bin ein Software-Ingenieur mit langjähriger Erfahrung für iOS und Web, einschließlich der Kenntnisse des \"Full-Stacks\" von Web-Technologien für Frontend- und Backend-Services.",
-    "longSummary": "Als Entwickler und CTO / Mobile Lead übernahm ich in der Vergangenheit die technische und strategische Führung verschiedener Projekte für namhafte, multinationale Kunden (z.B. Daimler AG, Mercedes-Benz Museum, Porsche AG, ImmobilienScout24) und Teams unterschiedlicher Größe (zwischen 5 und 15 Personen). Durch die langjährige Arbeit in einer Usability Agentur und meine hohe Eigenmotivation besitze ich eine ausgeprägtes Interesse für „benutzbare“ Produkte, welche langfristig auf einer technisch soliden Basis stehen.",
+    "summary": "Ich bin ein Software-Ingenieur mit langjähriger Erfahrung für Mobile (iOS / Flutter) und Web, einschließlich der Kenntnisse des \"Full-Stacks\" von Web-Technologien für Frontend- und Backend-Services.",
+    "longSummary": "Als Entwickler und CTO / Mobile Lead übernahm ich in der Vergangenheit die technische und strategische Führung verschiedener Projekte für namhafte, multinationale Kunden (z.B. Daimler AG, Mercedes-Benz Museum, Porsche AG, ImmobilienScout24, BKK VBU) und Teams unterschiedlicher Größe (zwischen 5 und 15 Personen). Durch die langjährige Arbeit in einer Usability Agentur und meine hohe Eigenmotivation besitze ich eine ausgeprägtes Interesse für „benutzbare“ Produkte, welche langfristig auf einer technisch soliden Basis stehen.",
     "highlights": null,
     "location": {
       "address": "Prenzlauer Allee 44",
@@ -44,15 +44,31 @@
     {
       "company": "BKK VBU",
       "position": "Freelance Senior Software Consultant",
-      "website": "http://www.meine-krankenkasse.de",
+      "website": "https://www.meine-krankenkasse.de",
       "startDate": "2019-08-01",
-      "endDate": "2019-10-31",
-      "summary": "Unterstützung bei der Realisierung von (mobilen) Anwendungen im Bereich eHealth und der Digitalisierung des Gesundheitswesens.",
-      "highlights": []
+      "endDate": "2020-09-30",
+      "summary": "Unterstützung bei der Realisierung von (mobilen) Anwendungen im Bereich eHealth und der Digitalisierung des Gesundheitswesens. Umsetzung einer App für Versicherte der BKK VBU, um in Kontakt mit Ihrer Krankenkasse zu treten und Aufgaben erledigen zu können. Neben der App (Flutter) wurde der komplette Stack auf Basis von Kubernetes und verschiedenen einzelnen Services realisiert. Diese Services wurden an etablierte Standard-Tools der Krankenkasse angebunden (z.B. 21c der BITMARCK), um Daten für Versicherte bereitzustellen.",
+      "highlights": [
+        "Interim Tech Lead für VBU platform",
+        "Mentoring interner Entwickler (Architektur / Code Standards)",
+        "Realisierung einer Flutter App und Umsetzung verschiedener Services betrieben mit Kubernetes"
+      ],
+      "links": [
+        {
+          "platform": "iOS",
+          "icon": "fa-apple",
+          "link": "https://apps.apple.com/de/app/bkk-vbu-meine-krankenkasse/id1488743521?l=de"
+        },
+        {
+          "platform": "Android",
+          "icon": "fa-android",
+          "link": "https://play.google.com/store/apps/details?id=de.meine_krankenkasse.vhoenixapp"
+        }
+      ]
     },
     {
       "company": "Elternzeit",
-      "position": "Dad",
+      "position": "Papa",
       "website": "",
       "startDate": "2019-06-01",
       "endDate": "2019-07-31",
@@ -81,7 +97,7 @@
       "endDate": "2018-12-31",
       "summary": "Ich arbeitete in einer englischsprachigen Umgebung und unterstützte die testgetriebene Implementierung einer komplett neuen Funktion für die Registrierung bei mehreren Anbietern. Des Weiteren habe ich Architekturentscheidungen und -empfehlungen getroffen, einen Workshop zur Einführung der Testbarkeit für das Gesamtprojekt gegeben und dabei geholfen, von Objective-C auf Swift 4.x zu migrieren",
       "highlights": [
-        "Führte Tests für das Projekt ein, Workshop zu UnitTests",
+        "Tests für das Projekt eingeführt, Workshop zu UnitTests",
         "Internationales Team",
         "Migration von Objective-C zu Swift"
       ]
@@ -96,10 +112,17 @@
       "shortSummary": "Realtor Lead Engine",
       "highlights": [
         "Umsetzung eines neuen Features zur Maklervermittlung und Immobilienbewertung",
-        "International Team",
+        "Internationales Team",
         "Migration von Objective-C zu Swift"
       ],
-      "pagebreak": true
+      "pagebreak": true,
+      "links": [
+        {
+          "platform": "iOS",
+          "icon": "fa-apple",
+          "link": "https://apps.apple.com/de/app/immobilienscout24-immobilien/id344176018"
+        }
+      ]
     },
     {
       "company": "BitingBit GmbH",
@@ -112,6 +135,13 @@
         "Pflege einer App für Automobilunternehmen",
         "Mentoring von mobilen Entwicklern",
         "Erstellung einer App für Zahnarzt-Kongresse mit Swift und Firebase"
+      ],
+      "links": [
+        {
+          "platform": "iOS QuintEvent",
+          "icon": "fa-apple",
+          "link": "https://apps.apple.com/de/app/quintevent/id1297378732"
+        }
       ]
     },
     {
@@ -172,11 +202,12 @@
   ],
   "skills": [
     {
-      "name": "iOS",
+      "name": "Mobile",
       "level": "Master",
       "keywords": [
         "Objective-C",
         "Swift",
+        "Flutter",
         "Cocoapods",
         "Carthage",
         "Xcode",
@@ -217,23 +248,32 @@
         "Gitlab",
         "Project lead",
         "Agile Development",
-        "JIRA",
+        "Jira",
         "Confluence"
       ]
     },
     {
-      "name": "Web Development",
+      "name": "General Development",
       "level": "Intermediate",
       "keywords": [
         "Node",
         "NPM",
         "Grunt",
+        "ReactJS",
+        "JavaScript",
+        "Python 3.x"
+      ]
+    },
+    {
+      "name": "Backend / Infrastructure",
+      "level": "Intermediate",
+      "keywords": [
         "REST",
         "AWS",
         "Serverless",
-        "ReactJS",
-        "JavaScript",
-        "MySQL"
+        "MySQL",
+        "Kubernetes",
+        "Prometheus"
       ]
     }
   ],

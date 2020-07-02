@@ -26,12 +26,26 @@
         </div>
         <div class="col-11 col-md-10 col-xl-11 timeline-info">
           <h3><span>{{ .position }}</span></h3>
-          <span><a href="{{ .website }}">{{ .company }}</a></span>
+          <span>
+          {{ if eq .website "" }}
+            <span class="company">{{ .company }}</span>
+          {{ else }}
+          <a href="{{ .website }}">{{ .company }}</a>
+          {{ end }}
+          </span>
           <p>{{ .summary }}</p>
           {{ if isset .highlights 0}}
           <ul>
             {{ range .highlights }}
             <li>{{ . }}</li>
+            {{ end }}
+          </ul>
+          {{ end }}
+
+          {{ if .links }}
+          <ul class="work-links">
+            {{ range .links }}
+            <li><a href="{{ .link }}" target="_blank"><i class="fab {{ .icon }} fa-md" aria-hidden="true"></i> {{ .platform }}</a></li>
             {{ end }}
           </ul>
           {{ end }}

@@ -2,6 +2,7 @@
 type: "static"
 avatar: avatar.jpg
 title: "Hi, ich bin"
+not_available_until: 30.09.2020
 resume_pdf: "resume-renekann-mobile-developer-deutsch.pdf"
 resume_doc: "resume-renekann-mobile-developer-deutsch.doc"
 title_animations: ["","ein Senior iOS Developer", "ein interim Tech Lead", "ein interim CTO", "René Kann"]

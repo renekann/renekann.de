@@ -50,3 +50,5 @@
   translation: "Skills"
 - id:          back_to_top
   translation: "Nach oben"
+- id:          currently_not_available
+  translation: "Aktuell nicht verfügbar bis:"

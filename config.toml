@@ -16,7 +16,7 @@ defaultContentLanguageInSubdir = true
     honeypot = "free_range_coral_houndstooth_sand"
     
 [params]
-  title = "René Kann - Senior iOS Developer / Mobile developer in Berlin"
+  title = "René Kann - Senior Mobile (iOS / Flutter) Developer in Berlin"
   favicon = "favicon.png"
     
 [params.nav]

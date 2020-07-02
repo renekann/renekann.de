@@ -7,8 +7,8 @@
     "phone": "0160 4421713",
     "degree": "",
     "website": "www.renekann.de",
-    "summary": "I am a software engineer with many years of experience for iOS and web, including knowledge of the \"full-stack\" of web technologies for frontend and backend services.",
-    "longSummary": "As a developer and technical lead I managed various projects for well-known, multinational clients (e.g. Daimler AG, Mercedes-Benz Museum, Autostadt / Porsche AG, ImmobilienScout24) and lead teams of varying sizes (between 5 to 15 persons). Having worked in a usability agency for many years and being extremely self-motivated with a strong interest for „usable“ products which are balanced with a technical design for a long term use.",
+    "summary": "I am a software engineer with many years of experience for Mobile (iOS / Flutter) and web, including knowledge of the \"full-stack\" of web technologies for frontend and backend services.",
+    "longSummary": "As a developer and technical lead I managed various projects for well-known, multinational clients (e.g. Daimler AG, Mercedes-Benz Museum, Autostadt / Porsche AG, ImmobilienScout24, BKK VBU) and lead teams of varying sizes (between 5 to 15 persons). Having worked in a usability agency for many years and being extremely self-motivated with a strong interest for „usable“ products which are balanced with a technical design for a long term use.",
     "highlights": null,
     "location": {
       "address": "Prenzlauer Allee 44",
@@ -44,11 +44,27 @@
     {
       "company": "BKK VBU",
       "position": "Freelance Senior Software Consultant",
-      "website": "http://www.meine-krankenkasse.de",
+      "website": "https://www.meine-krankenkasse.de",
       "startDate": "2019-08-01",
-      "endDate": "2019-10-31",
-      "summary": "Support in the realization of (mobile) applications in the field of eHealth and the digitization of the healthcare system.",
-      "highlights": []
+      "endDate": "2020-09-30",
+      "summary": "Support for the realisation of (mobile) applications in the field of eHealth and the digitalisation of the health care system. Implementation of an app for insured persons of the BKK VBU to get in contact with your health insurance company and to be able to complete tasks. In addition to the app (flutter), the complete stack was realized on the basis of Kubernetes and various individual services. These services were connected to established standard tools of health insurance companies (e.g. 21c of BITMARCK) to provide data for policyholders.",
+      "highlights": [
+        "Interim Tech Lead for VBU platform",
+        "Mentoring internal developers (Architecture / Coding Standards)",
+        "Realization of the Flutter App and implementation of various services operated with Kubernetes"
+      ],
+      "links": [
+        {
+          "platform": "iOS",
+          "icon": "fa-apple",
+          "link": "https://apps.apple.com/de/app/bkk-vbu-meine-krankenkasse/id1488743521?l=de"
+        },
+        {
+          "platform": "Android",
+          "icon": "fa-android",
+          "link": "https://play.google.com/store/apps/details?id=de.meine_krankenkasse.vhoenixapp"
+        }
+      ]
     },
     {
       "company": "Paternity Leave",
@@ -99,7 +115,14 @@
         "International Team",
         "Migration from Objective-C to Swift"
       ],
-      "pagebreak": true
+      "pagebreak": true,
+      "links": [
+        {
+          "platform": "iOS",
+          "icon": "fa-apple",
+          "link": "https://apps.apple.com/de/app/immobilienscout24-immobilien/id344176018"
+        }
+      ]
     },
     {
       "company": "BitingBit GmbH",
@@ -112,6 +135,13 @@
         "Maintained app for automotive environment",
         "Mentoring mobile developers",
         "Build swift app for dentist exhibition from scratch"
+      ],
+      "links": [
+        {
+          "platform": "iOS QuintEvent",
+          "icon": "fa-apple",
+          "link": "https://apps.apple.com/de/app/quintevent/id1297378732"
+        }
       ]
     },
     {
@@ -172,11 +202,12 @@
   ],
   "skills": [
     {
-      "name": "iOS",
+      "name": "Mobile",
       "level": "Master",
       "keywords": [
         "Objective-C",
         "Swift",
+        "Flutter",
         "Cocoapods",
         "Carthage",
         "Xcode",
@@ -217,23 +248,32 @@
         "Gitlab",
         "Project lead",
         "Agile Development",
-        "JIRA",
+        "Jira",
         "Confluence"
       ]
     },
     {
-      "name": "Web Development",
+      "name": "General Development",
       "level": "Intermediate",
       "keywords": [
         "Node",
         "NPM",
         "Grunt",
+        "ReactJS",
+        "JavaScript",
+        "Python 3.x"
+      ]
+    },
+    {
+      "name": "Backend / Infrastructure",
+      "level": "Intermediate",
+      "keywords": [
         "REST",
         "AWS",
         "Serverless",
-        "ReactJS",
-        "JavaScript",
-        "MySQL"
+        "MySQL",
+        "Kubernetes",
+        "Prometheus"
       ]
     }
   ],

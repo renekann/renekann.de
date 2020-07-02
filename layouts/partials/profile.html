@@ -38,8 +38,11 @@
               {{ range .Params.what_i_can_help }}
               <li>{{ . }}</li>
               {{ end }}
-              <ul>
+            </ul>
           </p>
+          {{ if not (eq (trim .Params.not_available_until " ") "") }}
+          <span class="availability">{{ i18n "currently_not_available" }} {{ .Params.not_available_until }} </span>
+          {{ end }}
         </div>
       </div>
     </div>

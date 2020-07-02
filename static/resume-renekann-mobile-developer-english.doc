@@ -736,7 +736,7 @@
           <w:rPr>
             <w:sz-cs w:val="20" />
           </w:rPr>
-          <w:t>I am a software engineer with many years of experience for iOS and web, including knowledge of the &quot;full-stack&quot; of web technologies for frontend and backend services.</w:t>
+          <w:t>I am a software engineer with many years of experience for Mobile (iOS / Flutter) and web, including knowledge of the &quot;full-stack&quot; of web technologies for frontend and backend services.</w:t>
         </w:r>
       </w:p>
       <wx:sub-section>
@@ -762,7 +762,7 @@
       <w:r wsp:rsidR="00C146CA" wsp:rsidRPr="00C146CA">
         <w:t>Freelance Senior Software Consultant, </w:t>
       </w:r>
-      <w:hlink w:dest="http://www.meine-krankenkasse.de">
+      <w:hlink w:dest="https://www.meine-krankenkasse.de">
         <w:r wsp:rsidR="009452CA" wsp:rsidRPr="00606071">
           <w:rPr>
             <w:rStyle w:val="Hyperlink"/>
@@ -777,7 +777,7 @@
         <w:rPr>
           <w:rStyle w:val="FromTo"/>
         </w:rPr>
-        <w:t>Aug 2019 — Oct 2019</w:t>
+        <w:t>Aug 2019 — Sep 2020</w:t>
       </w:r>
     </w:p>
     <w:p wsp:rsidR="00C146CA" wsp:rsidRPr="000A3AF0" wsp:rsidRDefault="00C146CA" wsp:rsidP="00C146CA">
@@ -786,9 +786,54 @@
           <w:sz-cs w:val="20"/>
         </w:rPr>
       </w:pPr>
-      <w:r><w:rPr></w:rPr><w:t>Support in the realization of (mobile) applications in the field of eHealth and the digitization of the healthcare system.</w:t></w:r>
+      <w:r><w:rPr></w:rPr><w:t>Support for the realisation of (mobile) applications in the field of eHealth and the digitalisation of the health care system. Implementation of an app for insured persons of the BKK VBU to get in contact with your health insurance company and to be able to complete tasks. In addition to the app (flutter), the complete stack was realized on the basis of Kubernetes and various individual services. These services were connected to established standard tools of health insurance companies (e.g. 21c of BITMARCK) to provide data for policyholders.</w:t></w:r>
     </w:p>
 
+    <w:p wsp:rsidR="00C146CA" wsp:rsidRDefault="009452CA" wsp:rsidP="00C146CA">
+      <w:pPr>
+        <w:pStyle w:val="ListParagraph"/>
+        <w:listPr>
+          <w:ilvl w:val="0"/>
+          <w:ilfo w:val="1"/>
+          <wx:t wx:val="•"/>
+          <wx:font wx:val="Calibri"/>
+        </w:listPr>
+        <w:rPr>
+          <w:sz-cs w:val="20"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r><w:rPr></w:rPr><w:t>Interim Tech Lead for VBU platform</w:t></w:r>
+    </w:p>
+    <w:p wsp:rsidR="00C146CA" wsp:rsidRDefault="009452CA" wsp:rsidP="00C146CA">
+      <w:pPr>
+        <w:pStyle w:val="ListParagraph"/>
+        <w:listPr>
+          <w:ilvl w:val="0"/>
+          <w:ilfo w:val="1"/>
+          <wx:t wx:val="•"/>
+          <wx:font wx:val="Calibri"/>
+        </w:listPr>
+        <w:rPr>
+          <w:sz-cs w:val="20"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r><w:rPr></w:rPr><w:t>Mentoring internal developers (Architecture / Coding Standards)</w:t></w:r>
+    </w:p>
+    <w:p wsp:rsidR="00C146CA" wsp:rsidRDefault="009452CA" wsp:rsidP="00C146CA">
+      <w:pPr>
+        <w:pStyle w:val="ListParagraph"/>
+        <w:listPr>
+          <w:ilvl w:val="0"/>
+          <w:ilfo w:val="1"/>
+          <wx:t wx:val="•"/>
+          <wx:font wx:val="Calibri"/>
+        </w:listPr>
+        <w:rPr>
+          <w:sz-cs w:val="20"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r><w:rPr></w:rPr><w:t>Realization of the Flutter App and implementation of various services operated with Kubernetes</w:t></w:r>
+    </w:p>
 
   </wx:sub-section>
 
@@ -1381,7 +1426,7 @@
               </w:tcPr>
               <w:p wsp:rsidR="00427ECC" wsp:rsidRDefault="00FA3357" wsp:rsidP="00427ECC">
                 <w:r>
-                  <w:t>iOS:</w:t>
+                  <w:t>Mobile:</w:t>
                 </w:r>
               </w:p>
             </w:tc>
@@ -1395,7 +1440,7 @@
                   <w:jc w:val="left" />
                 </w:pPr>
                 <w:r>
-                  <w:t>Objective-C, Swift, Cocoapods, Carthage, Xcode, JSON, Fastlane, Dependency Injection, MVVM, MVP, MVC, Broadcasting Pattern, VIPER, Unit Testing, XCTest, Core Data, Native Apps, Salesforce SDK, Couchbase lite, PromiseKit, Buddybuild, HockeyApp, Tesseract OCR, Git, In-App Purchasing (IAP), WatchKit</w:t>
+                  <w:t>Objective-C, Swift, Flutter, Cocoapods, Carthage, Xcode, JSON, Fastlane, Dependency Injection, MVVM, MVP, MVC, Broadcasting Pattern, VIPER, Unit Testing, XCTest, Core Data, Native Apps, Salesforce SDK, Couchbase lite, PromiseKit, Buddybuild, HockeyApp, Tesseract OCR, Git, In-App Purchasing (IAP), WatchKit</w:t>
                 </w:r>
               </w:p>
             </w:tc>
@@ -1422,7 +1467,7 @@
                   <w:jc w:val="left" />
                 </w:pPr>
                 <w:r>
-                  <w:t>TDD, Rapid Application Development, Scrum, Clean Code, Continuous Integration, Continuous Delivery, GitHub, Gitlab, Project lead, Agile Development, JIRA, Confluence</w:t>
+                  <w:t>TDD, Rapid Application Development, Scrum, Clean Code, Continuous Integration, Continuous Delivery, GitHub, Gitlab, Project lead, Agile Development, Jira, Confluence</w:t>
                 </w:r>
               </w:p>
             </w:tc>
@@ -1435,7 +1480,7 @@
               </w:tcPr>
               <w:p wsp:rsidR="00427ECC" wsp:rsidRDefault="00FA3357" wsp:rsidP="00427ECC">
                 <w:r>
-                  <w:t>Web Development:</w:t>
+                  <w:t>General Development:</w:t>
                 </w:r>
               </w:p>
             </w:tc>
@@ -1449,7 +1494,34 @@
                   <w:jc w:val="left" />
                 </w:pPr>
                 <w:r>
-                  <w:t>Node, NPM, Grunt, REST, AWS, Serverless, ReactJS, JavaScript, MySQL</w:t>
+                  <w:t>Node, NPM, Grunt, ReactJS, JavaScript, Python 3.x</w:t>
+                </w:r>
+              </w:p>
+            </w:tc>
+          </w:tr>
+          <w:tr wsp:rsidR="00427ECC" wsp:rsidTr="004A1399">
+            <w:tc>
+              <w:tcPr>
+                <w:tcW w:w="2093" w:type="dxa" />
+                <w:shd w:val="clear" w:color="auto" w:fill="auto" />
+              </w:tcPr>
+              <w:p wsp:rsidR="00427ECC" wsp:rsidRDefault="00FA3357" wsp:rsidP="00427ECC">
+                <w:r>
+                  <w:t>Backend / Infrastructure:</w:t>
+                </w:r>
+              </w:p>
+            </w:tc>
+            <w:tc>
+              <w:tcPr>
+                <w:tcW w:w="7483" w:type="dxa" />
+                <w:shd w:val="clear" w:color="auto" w:fill="auto" />
+              </w:tcPr>
+              <w:p wsp:rsidR="00427ECC" wsp:rsidRDefault="00FA3357" wsp:rsidP="00427ECC">
+                <w:pPr>
+                  <w:jc w:val="left" />
+                </w:pPr>
+                <w:r>
+                  <w:t>REST, AWS, Serverless, MySQL, Kubernetes, Prometheus</w:t>
                 </w:r>
               </w:p>
             </w:tc>
