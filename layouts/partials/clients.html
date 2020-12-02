@@ -1,14 +1,16 @@
-<section id="languages">
+<section id="clients" id="{{ .Site.Params.contact.clients }}">
   <div class="container">
     <div class="row">
       <div class="col-lg-12">
-        <h1>{{ .Site.Params.clients.Title }}</h1>
+        <h1>{{ i18n "clients_title" }}</h1>
       </div>
     </div>
     <div class="row">
-      {{ range where .Site.Pages "Params.client" true }}
-      <div class="col-lg-3">
-        <img src="img/{{ .Params.image }}">
+      {{ $data := index .Site.Data .Site.Language.Lang }}
+      {{ $resume := $data.resume }}
+      {{ range $resume.clients }}
+      <div class="col-6 col-sm-3 col-md-2 col-lg-1 client">
+        <img src="{{ .Site.BaseURL }}/img/clients/{{ .logo }}" class="logo">
       </div>
       {{ end }}
     </div>

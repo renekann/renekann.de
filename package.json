@@ -25,6 +25,7 @@
     "gulp-uglify": "^3.0.2"
   },
   "dependencies": {
+    "roddeh-i18n": "^1.2.0",
     "typed.js": "^2.0.10"
   }
 }

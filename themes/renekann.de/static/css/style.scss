@@ -4,35 +4,41 @@
 @mixin transition-effect {
   transition: all 0.4s ease;
 }
+
 @mixin xs {
   @media (max-width: #{$screen-xs-min}) {
     @content;
   }
 }
+
 // Small devices
 @mixin sm {
   @media (max-width: #{$screen-sm-min}) {
     @content;
   }
 }
+
 // Medium devices
 @mixin md {
   @media (max-width: #{$screen-md-min}) {
     @content;
   }
 }
+
 // Large devices
 @mixin lg {
   @media (max-width: #{$screen-lg-min}) {
     @content;
   }
 }
+
 // Extra large devices
 @mixin xl {
   @media (max-width: #{$screen-xl-min}) {
     @content;
   }
 }
+
 @mixin rwd($screen) {
   @media (max-width: $screen+'px') {
     @content;
@@ -41,25 +47,25 @@
 
 body {
   font-family: $font-base;
-  font-size  : $body-font-size;
-  color      : $body-font-color;
+  font-size: $body-font-size;
+  color: $body-font-color;
   padding-top: 70px;
 }
 
 .small-text {
-  color         : $body-font-color;
-  font-size     : $small-font-size;
-  font-weight   : $font-weight-bold;
-  padding       : 8px 16px;
-  border-radius : 50px;
+  color: $body-font-color;
+  font-size: $small-font-size;
+  font-weight: $font-weight-bold;
+  padding: 8px 16px;
+  border-radius: 50px;
   letter-spacing: 0.2px;
 }
 
 a {
-  font-size      : $link-font-size;
-  font-weight    : $font-weight-normal;
+  font-size: $link-font-size;
+  font-weight: $font-weight-normal;
   text-decoration: none !important;
-  color          : $href-color;
+  color: $href-color;
   @include transition-effect;
 
   &:hover {
@@ -74,16 +80,17 @@ a {
 }
 
 section {
-  margin-top   : 25px;
+  margin-top: 25px;
   margin-bottom: 25px;
 }
+
 // TYPOGRAPHY
 
 p {
-  font-size  : $body-font-size;
+  font-size: $body-font-size;
   font-weight: $font-weight-light;
   line-height: 1.5;
-  color      : $body-font-color;
+  color: $body-font-color;
 }
 
 h1,
@@ -96,24 +103,24 @@ h6 {
 }
 
 h1 {
-  color    : $h1-font-color;
+  color: $h1-font-color;
   font-size: $h1-font-size;
-  margin   : 24px 0;
+  margin: 24px 0;
 }
 
 h2 {
-  color      : $h2-font-color;
-  font-size  : $h2-font-size;
+  color: $h2-font-color;
+  font-size: $h2-font-size;
   font-weight: $font-weight-bold;
 }
 
 h3 {
-  color    : $h3-font-color;
+  color: $h3-font-color;
   font-size: $h3-font-size;
 }
 
 h4 {
-  color    : $h4-font-color;
+  color: $h4-font-color;
   font-size: $h4-font-size;
 }
 
@@ -128,7 +135,7 @@ ul {
 }
 
 a[href^="x-apple-data-detectors:"] {
-  color          : inherit;
+  color: inherit;
   text-decoration: inherit;
 }
 
@@ -139,13 +146,13 @@ li {
 // CUSTOM BUTTON
 
 .custom-btn {
-  color        : $body-font-color;
-  font-weight  : $font-weight-bold;
+  color: $body-font-color;
+  font-weight: $font-weight-bold;
   border-radius: 6px;
-  padding      : 13px 29px;
-  font-size    : $small-font-size;
-  line-height  : normal;
-  overflow     : hidden;
+  padding: 13px 29px;
+  font-size: $small-font-size;
+  line-height: normal;
+  overflow: hidden;
   @include transition-effect;
 
   &:hover {
@@ -154,11 +161,11 @@ li {
 
   &.custom-btn-bg {
     background: $button-color;
-    color     : $text-white;
+    color: $text-white;
 
     &:hover {
       background: $main-color;
-      color     : $text-white;
+      color: $text-white;
     }
   }
 
@@ -171,8 +178,8 @@ li {
   }
 
   &.custom-btn-social {
-    padding     : 10px;
-    width       : 70px;
+    padding: 10px;
+    width: 70px;
     margin-right: 10px;
   }
 
@@ -191,6 +198,7 @@ li {
 .resume-icon {
   margin-right: 10px;
 }
+
 // ANIMATED TEXT
 
 .animated-info {
@@ -198,22 +206,23 @@ li {
 }
 
 #typed-strings {
-  display    : none;
+  display: none;
   font-weight: 400;
 }
+
 // MENU
 
 .navbar {
-  position        : fixed;
-  top             : 0;
-  right           : 0;
-  left            : 0;
-  z-index         : 999999;
-  will-change     : transform;
-  transition      : transform 200ms linear;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 999999;
+  will-change: transform;
+  transition: transform 200ms linear;
   background-color: #fff;
-  border-bottom   : 1px solid #efefef;
-  padding         : 15px;
+  border-bottom: 1px solid #efefef;
+  padding: 15px;
 }
 
 .navbar-brand {
@@ -230,19 +239,19 @@ li {
 
 .nav-link {
   font-weight: $font-weight-bold;
-  font-size  : 16px;
-  overflow   : hidden;
+  font-size: 16px;
+  overflow: hidden;
 
   span {
-    position  : relative;
-    display   : inline-block;
+    position: relative;
+    display: inline-block;
     transition: transform 0.3s;
 
     &:before {
-      position : absolute;
-      top      : 100%;
-      content  : attr(data-hover);
-      transform: translate3d(0,0,0);
+      position: absolute;
+      top: 100%;
+      content: attr(data-hover);
+      transform: translate3d(0, 0, 0);
     }
   }
 }
@@ -251,7 +260,7 @@ li {
   .navbar-nav {
     .nav-link:focus,
     .nav-link:hover {
-      color      : $main-color;
+      color: $main-color;
       font-weight: $font-weight-bold;
 
       span {
@@ -260,6 +269,7 @@ li {
     }
   }
 }
+
 // HAMBURGER MENU
 
 .navbar-light {
@@ -269,13 +279,13 @@ li {
 }
 
 .navbar-toggler {
-  border      : 0;
-  padding     : 0;
-  width       : 32px;
-  height      : 32px;
-  line-height : 32px;
-  outline     : none;
-  cursor      : pointer;
+  border: 0;
+  padding: 0;
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  outline: none;
+  cursor: pointer;
   margin-right: 10px;
 
   &:focus {
@@ -286,7 +296,7 @@ li {
     .navbar-toggler-icon {
       &:first-child {
         transform: rotate(45deg);
-        top      : 6px;
+        top: 6px;
       }
 
       &:nth-child(2) {
@@ -295,26 +305,27 @@ li {
 
       &:last-child {
         transform: rotate(-45deg);
-        bottom   : 1px;
+        bottom: 1px;
       }
     }
   }
 
   .navbar-toggler-icon {
     background: $h1-font-color;
-    display   : block;
-    width     : 100%;
-    height    : 2px;
-    margin    : 5px 0;
+    display: block;
+    width: 100%;
+    height: 2px;
+    margin: 5px 0;
     @include transition-effect;
-    position  : relative;
+    position: relative;
   }
 }
+
 // profile
 
 .cover-photo {
   border-radius: 100%;
-  padding      : 25px;
+  padding: 25px;
 }
 
 .about {
@@ -323,11 +334,11 @@ li {
   }
 
   li::before {
-    font-family : "Font Awesome 5 Free";
-    font-weight : 900;
-    content     : "\f067";
-    display     : inline-block;
-    margin-left : -20px;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f067";
+    display: inline-block;
+    margin-left: -20px;
     margin-right: 12px;
   }
 
@@ -337,28 +348,28 @@ li {
 }
 
 .availability {
-	font-weight: 400;
-	color: $href-color;
+  font-weight: 400;
+  color: $href-color;
 }
 
 // COPYRIGHT TEXT
 
 .copyright-text {
-  font-size  : 16px;
+  font-size: 16px;
   font-weight: $font-weight-normal;
-  display    : block;
+  display: block;
 }
 
 // Language
 .language {
   ul {
     list-style: none;
-    margin    : 0;
-    padding   : 0;
+    margin: 0;
+    padding: 0;
   }
 
   li {
-    display     : inline;
+    display: inline;
     margin-right: 10px;
   }
 
@@ -377,8 +388,8 @@ li {
 // COLOR MODE
 
 .color-mode {
-  font-size : 16px;
-  cursor    : pointer;
+  font-size: 16px;
+  cursor: pointer;
   margin-top: 2px;
 
   span {
@@ -398,8 +409,8 @@ li {
 }
 
 .dark-mode {
-	background: $dark-mode-color;
-	@import 'darkmode';
+  background: $dark-mode-color;
+  @import 'darkmode';
 }
 
 .work .row:last-child .timeline-beam-dotted:last-child {
@@ -407,16 +418,30 @@ li {
 }
 
 .work-links {
-	list-style: none;
-	padding-inline-start: 0px;
+  list-style: none;
+  padding-inline-start: 0px;
 }
 
 .work-links li {
-	left-margin: 0px;
+  left-margin: 0px;
+  font-size: $link-font-size;
+  font-weight: 400;
 }
 
 .work .company {
-	font-size: $link-font-size;
+  font-size: $link-font-size;
+}
+
+.keywords {
+  color: $body-font-color;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.work .keywords span {
+  padding: 2px 5px 2px 5px;
+  border: 1px $href-color solid;
+  font-size: $tag-size;
 }
 
 .timeline-times {
@@ -424,28 +449,28 @@ li {
 }
 
 .timeline-start {
-  bottom       : 0;
+  bottom: 0;
   margin-bottom: 5px;
 }
 
 .timeline-end,
 .timeline-start {
-  position     : absolute;
-  text-align   : right;
+  position: absolute;
+  text-align: right;
   padding-right: 30px;
-  width        : 100%;
-  line-height  : 1;
+  width: 100%;
+  line-height: 1;
 
   &:after {
-    content      : "";
-    background   : $timelime-dot-color;
-    border       : 2px solid $timelime-dot-border-color;
+    content: "";
+    background: $timelime-dot-color;
+    border: 2px solid $timelime-dot-border-color;
     border-radius: 50%;
-    width        : 15px;
-    height       : 15px;
-    position     : absolute;
-    right        : 7px;
-    top          : 4px;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    right: 7px;
+    top: 4px;
   }
 }
 
@@ -464,51 +489,68 @@ li {
 }
 
 .timeline-beam {
-  height      : 100%;
+  height: 100%;
   border-right: 1px solid $timelime-line-color;
 }
 
 .timeline-beam-dotted {
-  height      : 70px;
+  height: 70px;
   border-right: 1px dashed $timelime-line-color;
 }
 
 .typed-cursor {
   color: #585858;
 }
+
+// clients
+
+.client {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centering y-axis */
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.client .logo {
+  max-width: 100px;
+  height: auto;
+}
+
 // services
 
 .card {
-  display         : block;
-  top             : 0;
-  text-align      : center;
-  position        : relative;
+  display: block;
+  top: 0;
+  text-align: center;
+  position: relative;
   background-color: #f2f8f9;
-  border-radius   : 4px;
-  padding         : 25px;
-  text-decoration : none;
-  z-index         : 0;
-  overflow        : hidden;
-  border          : 1px solid #f2f8f9;
+  border-radius: 4px;
+  padding: 25px;
+  text-decoration: none;
+  z-index: 0;
+  overflow: hidden;
+  border: 1px solid #f2f8f9;
 
   h4 {
     margin-top: 10px;
   }
 
   &:hover {
-    transition      : all 0.2s ease-out;
-    box-shadow      : 0 4px 8px rgba(38, 38, 38, 0.2);
-    top             : -4px;
-    border          : 1px solid #cccccc;
+    transition: all 0.2s ease-out;
+    box-shadow: 0 4px 8px rgba(38, 38, 38, 0.2);
+    top: -4px;
+    border: 1px solid #cccccc;
     background-color: white;
   }
 }
+
 // Contact
 
 .contact-card {
   ul {
-    margin       : 0;
-    padding      : 0;
+    margin: 0;
+    padding: 0;
     margin-bottom: 20px !important;
 
     li {
@@ -519,13 +561,13 @@ li {
 
 // PIWIK
 .piwik {
-  margin-left : -10px;
+  margin-left: -10px;
   margin-right: -10px;
 
   .piwik-frame {
     border: 0;
     height: 150px;
-    width : 100%;
+    width: 100%;
   }
 }
 
@@ -578,7 +620,7 @@ li {
 
 @include sm {
   .w-sx-100 {
-    width      : 100%;
+    width: 100%;
     line-height: 2;
   }
 
@@ -592,7 +634,7 @@ li {
 
   .custom-btn {
     display: block;
-    margin : 10px 0;
+    margin: 10px 0;
   }
 
   .custom-btn-social {
@@ -605,7 +647,7 @@ li {
 
   .timeline-info small {
     display: block;
-    margin : 10px 0 0;
+    margin: 10px 0 0;
   }
 
   .piwik {

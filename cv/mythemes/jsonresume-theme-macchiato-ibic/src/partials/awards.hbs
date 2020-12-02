@@ -1,0 +1,19 @@
+{{#if resume.awards.length}}
+<div class="container awards-container">
+    {{> title value="Awards"}}
+
+    {{#each resume.awards}}
+        <div class="item">
+            {{> section-header name=this.title }}
+
+            {{#if awarder}}
+            <h5 class="awarder">{{awarder}}</h5>
+            {{/if}}
+
+            {{#if summary}}
+            <p class="summary">{{summary}}</p>
+            {{/if}}
+        </div>
+    {{/each}}
+</div>
+{{/if}}

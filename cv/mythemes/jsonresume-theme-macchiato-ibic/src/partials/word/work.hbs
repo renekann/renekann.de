@@ -1,0 +1,42 @@
+{{#if resume.work.length}}
+  <div class="container work-container">
+    {{> word/title value='Projects'}}
+
+    {{#each resume.work}}
+        <div class="item" style="margin-bottom: 30px">
+        {{#if name}}
+          {{> word/section-header name=this.name}}
+        {{/if}}
+        {{#if company}}
+          {{> word/section-header name=this.company}}
+        {{/if}}
+
+        {{#if position}}
+          <h4>{{position}}</h4>
+        {{/if}}
+
+        {{#if keywords.length}}
+          <h6 style="font-style: italic">{{join keywords ", "}}</h6>
+        {{/if}}
+
+        {{#if summary}}
+          <p class="summary">{{summary}}</p>
+        {{/if}}
+
+        {{#if highlights.length}}
+          <ul>
+            {{#each highlights}}
+              <li>{{.}}</li>
+            {{/each}}
+          </ul>
+        {{/if}}
+
+        {{#if links.length}}
+            {{#each links}}
+              <h6><a href="{{ link }}" target="_blank">{{link}}</a></h6>
+            {{/each}}
+        {{/if}}
+        </div>
+    {{/each}}
+  </div>
+{{/if}}

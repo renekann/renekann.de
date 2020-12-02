@@ -25,4 +25,5 @@ Changes to themes CSS and JS must be done on the `/themes/renekann.de/static` fo
 In `layouts/partials`
 
 # Deployment
+- run `build.sh all` in folder `cv`
 - Push to master branch will update the live version on netlify

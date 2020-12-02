@@ -1,0 +1,30 @@
+<div>
+  {{#if name}}
+    <span style="font-weight: 700">
+      {{#if website}}
+        <a href="{{website}}" target="_blank">
+          {{name}}
+          {{#if showWebsite }}
+            <span class="sublink"><a href="{{website}}" target="_blank" class="sublink" style="text-decoration: none; color: #EFA00B">{{website}}</a></span>
+          {{/if}}
+        </a>
+      {{else}}
+        {{name}}
+      {{/if}}
+    </span>
+  {{/if}}
+  <span style="font-weight: 300; font-size: 8pt">&nbsp;&nbsp;
+    (
+    {{#if startDate}}
+      <span class="startDate">{{formatDate startDate}}</span>
+      {{#if endDate}}
+        <span class="endDate"> - {{formatDate endDate}}</span>
+      {{else}}
+        <span class="endDate"> - Present</span>
+      {{/if}}
+    {{else if releaseDate}}
+      {{formatDate releaseDate}}
+    {{/if}}
+    )
+  </span>
+</div>

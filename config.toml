@@ -14,11 +14,11 @@ defaultContentLanguageInSubdir = true
     weight = 2
     contactEndpoint = "https://app.99inbound.com/api/e/09UD9P5C"
     honeypot = "free_range_coral_houndstooth_sand"
-    
+
 [params]
   title = "René Kann - Senior Mobile (iOS / Flutter) Developer in Berlin"
   favicon = "favicon.png"
-    
+
 [params.nav]
   enable = true
 
@@ -33,7 +33,11 @@ defaultContentLanguageInSubdir = true
 [params.work]
   enable = true
   anchor = "work"
-  
+
+[params.clients]
+  enable = false
+  anchor = "clients"
+
 [params.services]
   enable = false
   title = "How I can help"
@@ -46,7 +50,7 @@ defaultContentLanguageInSubdir = true
 [params.education]
   enable = true
   title = "Education"
-  
+
 [params.contact]
   enable = true
   anchor = "contact"

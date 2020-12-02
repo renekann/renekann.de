@@ -1,0 +1,82 @@
+{
+  "_from": "jsonresume-theme-macchiato-ibic",
+  "_id": "jsonresume-theme-macchiato-ibic@1.0.4",
+  "_inBundle": false,
+  "_integrity": "sha512-Rp6CeZGFeWNbn6uRff3X9kSS2wOOlAknl7F5VetyB6nBvtLLFKUWZhqlhWtNE13Q1o3Q2VHunJdNw83/q/4i8A==",
+  "_location": "/jsonresume-theme-macchiato-ibic",
+  "_phantomChildren": {
+    "neo-async": "2.6.1",
+    "object-assign": "4.1.1",
+    "require-glob": "3.2.0",
+    "source-map": "0.6.1",
+    "uglify-js": "3.6.0"
+  },
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "jsonresume-theme-macchiato-ibic",
+    "name": "jsonresume-theme-macchiato-ibic",
+    "escapedName": "jsonresume-theme-macchiato-ibic",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/jsonresume-theme-macchiato-ibic/-/jsonresume-theme-macchiato-ibic-1.0.4.tgz",
+  "_shasum": "1c78de026f0c3299edfcdf654cad9b5bbd2bb614",
+  "_spec": "jsonresume-theme-macchiato-ibic",
+  "_where": "/Users/kann/Desktop/Aktenschrank/Freiberuflichkeit/Resume/cv/mythemes",
+  "author": {
+    "name": "Alessandro Biondi",
+    "url": "Fork created by HOU Tianze"
+  },
+  "bugs": {
+    "url": "https://github.com/houtianze/jsonresume-theme-macchiato-ibic/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "address-format": "^0.0.3",
+    "handlebars": "^4.7.2",
+    "handlebars-wax": "^6.1.0",
+    "moment": "^2.24.0",
+    "roddeh-i18n": "^1.2.0",
+    "swag": "^0.7.0"
+  },
+  "deprecated": false,
+  "description": "Simple theme for JSON Resume. Based on macchiato, which based on caffeine-theme.",
+  "devDependencies": {
+    "@commitlint/cli": "~8.2.0",
+    "@commitlint/config-conventional": "~8.2.0",
+    "eslint": "^6.5.1",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "husky": "~3.0.9",
+    "jest": "^24.9.0",
+    "jest-handlebars": "^1.0.1",
+    "jest-image-snapshot": "^2.11.0",
+    "prettier": "^1.18.2",
+    "puppeteer": "^2.0.0"
+  },
+  "homepage": "https://github.com/houtianze/jsonresume-theme-macchiato-ibic#readme",
+  "jest": {
+    "transform": {
+      "\\.hbs$": "jest-handlebars"
+    }
+  },
+  "license": "MIT",
+  "name": "jsonresume-theme-macchiato-ibic",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/houtianze/jsonresume-theme-macchiato-ibic.git"
+  },
+  "scripts": {
+    "lint": "eslint *.js",
+    "prepublishOnly": "npm run pretty && npm run lint && npm run test",
+    "pretty": "prettier --write --ignore-path='*lock.json' '{src/**/*.{js,ts,json},./*{js,ts,json}}' ",
+    "test": "jest"
+  },
+  "version": "1.0.4"
+}

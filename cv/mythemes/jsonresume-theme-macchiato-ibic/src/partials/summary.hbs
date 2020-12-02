@@ -1,0 +1,18 @@
+{{#resume.basics}}
+    {{#if summary}}
+        <div class="container summary-container">
+            <p class="summary">
+                {{summary}}
+            </p>
+            <p class=longSummary">{{longSummary}}</p>
+          {{#if highlights}}
+            <h4>{{i18n "I can help with"}}</h4>
+            <ul>
+              {{#each highlights}}
+                <li>{{.}}</li>
+              {{/each}}
+            </ul>
+          {{/if}}
+        </div>
+    {{/if}}
+{{/resume.basics}}

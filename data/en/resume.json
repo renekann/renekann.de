@@ -1,15 +1,21 @@
 {
   "basics": {
     "name": "René Kann",
-    "label": "Senior iOS Developer | Mobile Lead",
-    "picture": "../../static/img/avatar.jpg",
+    "label": "Senior Mobile Developer | Interim Lead",
+    "picture": "https://www.renekann.de/img/avatar.jpg",
     "email": "mail@renekann.de",
     "phone": "0160 4421713",
     "degree": "",
     "website": "www.renekann.de",
     "summary": "I am a software engineer with many years of experience for Mobile (iOS / Flutter) and web, including knowledge of the \"full-stack\" of web technologies for frontend and backend services.",
     "longSummary": "As a developer and technical lead I managed various projects for well-known, multinational clients (e.g. Daimler AG, Mercedes-Benz Museum, Autostadt / Porsche AG, ImmobilienScout24, BKK VBU) and lead teams of varying sizes (between 5 to 15 persons). Having worked in a usability agency for many years and being extremely self-motivated with a strong interest for „usable“ products which are balanced with a technical design for a long term use.",
-    "highlights": null,
+    "highlights": [
+      "Building a MVP",
+      "migrate from Objective-C to Swift",
+      "Interim Tech Lead / Interim CTO",
+      "Refactoring, introducing testability, performance issues",
+      "Mentoring"
+    ],
     "location": {
       "address": "Prenzlauer Allee 44",
       "postalCode": "10405",
@@ -43,16 +49,17 @@
   "work": [
     {
       "company": "BKK VBU",
-      "position": "Freelance Senior Software Consultant",
+      "position": "Freelance Interim Tech Lead",
       "website": "https://www.meine-krankenkasse.de",
       "startDate": "2019-08-01",
-      "endDate": "2020-09-30",
+      "endDate": "2020-12-31",
       "summary": "Support for the realisation of (mobile) applications in the field of eHealth and the digitalisation of the health care system. Implementation of an app for insured persons of the BKK VBU to get in contact with your health insurance company and to be able to complete tasks. In addition to the app (flutter), the complete stack was realized on the basis of Kubernetes and various individual services. These services were connected to established standard tools of health insurance companies (e.g. 21c of BITMARCK) to provide data for policyholders.",
       "highlights": [
         "Interim Tech Lead for VBU platform",
         "Mentoring internal developers (Architecture / Coding Standards)",
         "Realization of the Flutter App and implementation of various services operated with Kubernetes"
       ],
+      "keywords": ["Kubernetes", "Flutter", "RabbitMQ", "Keycloak", "eHealth", "CI/CD", "Redux", "B2C"],
       "links": [
         {
           "platform": "iOS",
@@ -76,13 +83,14 @@
       "highlights": []
     },
     {
-      "company": "Successyou GmbH",
+      "company": "Successyou GmbH (Part of OSF Digital)",
       "position": "Freelance Senior iOS Developer + Consultant",
       "teaser": "Maintained B2B App for sales rep",
       "website": "http://www.successyou.de/",
       "startDate": "2019-01-01",
       "endDate": "2019-05-31",
       "summary": "Maintained an app for a large multinational corporation of nonalcoholic beverage concentrates which was used by a large group of sales representatives in Europe. The app was highly reactive, connected to Salesforce backend and used Couchbase lite for local persistence. I migrated the app and related frameworks to Swift 4.2 and gave architectural decisions and recommendations.",
+      "keywords": ["Salesforce", "Swift", "Couchbase","B2B"],
       "highlights": [
         "Salesforce SDK / Salesforce with iOS",
         "Used Couchbase lite for local persistence",
@@ -96,6 +104,7 @@
       "startDate": "2018-10-01",
       "endDate": "2018-12-31",
       "summary": "Working in an English speaking environment I supported with test-driven implementation of a complete new feature for multi provider registration. Did the architectural decisions and recommendations, gave a workshop about introducing testability for the overall project and helped migrating from Objective-C to Swift 4.x",
+      "keywords": ["Objective-C", "Swift", "Migration", "Workshop", "B2C"],
       "highlights": [
         "Introduced testability and gave workshop about testing",
         "International Team",
@@ -110,6 +119,7 @@
       "endDate": "2018-09-30",
       "summary": "Working in an English speaking environment I supported with test-driven implementation of new product functions using Swift / Objective-C and MVVM, MVP in biweekly sprints for the ImmobilienScout24 App. I also consulted in evaluation of new product ideas, feasibility study to connect external service providers. ",
       "shortSummary": "Realtor Lead Engine",
+      "keywords": ["Swift", "Objective-C", "Test-Driven", "AWS", "Migration", "B2C"],
       "highlights": [
         "Implemented new feature to generate realtor leads",
         "International Team",
@@ -136,11 +146,12 @@
         "Mentoring mobile developers",
         "Build swift app for dentist exhibition from scratch"
       ],
+      "keywords": ["Objective-C", "Swift", "Firebase", "Neuentwickung", "Mentoring", "MVVM", "B2C"],
       "links": [
         {
           "platform": "iOS QuintEvent",
           "icon": "fa-apple",
-          "link": "https://apps.apple.com/de/app/quintevent/id1297378732"
+          "link": ""
         }
       ]
     },
@@ -171,7 +182,7 @@
     {
       "company": "Schroeder + Wendt GbR",
       "position": "Freelancer for RIA and Web Development",
-      "website": "http://www.schroeder-wendt.de",
+      "website": "",
       "startDate": "2006-06-01",
       "endDate": "2009-10-31",
       "summary": "Implemented rich internet applications (RIA) with Flash, Flex and Silverlight and web applications for various larger clients. Created a prototype of a possible online video analyzing and editing tool with Silverlight for a presentation at the Cebit 2012 together with Microsoft.",
@@ -183,7 +194,7 @@
   "education": [
     {
       "institution": "Otto-von-Guericke University Magdeburg",
-      "area": "Computational visualistics, focus on mechanical engineering",
+      "area": "of Computational visualistics, focus on mechanical engineering",
       "studyType": "Dipl.-Ing.",
       "startDate": "2005-08-01",
       "endDate": "2011-05-31",
@@ -208,9 +219,11 @@
         "Objective-C",
         "Swift",
         "Flutter",
+        "Redux",
         "Cocoapods",
         "Carthage",
         "Xcode",
+        "Dart",
         "JSON",
         "Fastlane",
         "Dependency Injection",
@@ -226,12 +239,9 @@
         "Salesforce SDK",
         "Couchbase lite",
         "PromiseKit",
-        "Buddybuild",
-        "HockeyApp",
         "Tesseract OCR",
         "Git",
-        "In-App Purchasing (IAP)",
-        "WatchKit"
+        "Browserstack"
       ]
     },
     {
@@ -261,6 +271,7 @@
         "Grunt",
         "ReactJS",
         "JavaScript",
+        "TypeScript",
         "Python 3.x"
       ]
     },
@@ -291,7 +302,7 @@
   "languages": [
     {
       "name": "German",
-      "level": "Native or bilingual proficiency"
+      "level": "Native"
     },
     {
       "name": "English",
@@ -301,5 +312,11 @@
       "name": "Spanish",
       "level": "Elementary proficiency"
     }
-  ]
+  ],
+  "sustainability": {
+    "summary": "I support sustainable development and ",
+    "examples": [
+      "Go by bike whenever (weather is not an excuse)"
+    ]
+  }
 }

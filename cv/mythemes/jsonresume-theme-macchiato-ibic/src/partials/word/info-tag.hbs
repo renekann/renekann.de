@@ -1,0 +1,8 @@
+{{#if url}}
+  <a href="{{#if isEmail}}mailto:{{/if}}{{url}}" target="_blank">
+    {{removeProtocol text}}
+    {{!-- <i class="fa fa-external-link" aria-hidden="true"></i> --}}
+  </a>
+{{else}}
+  {{{text}}}
+{{/if}}

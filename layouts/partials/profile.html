@@ -35,7 +35,7 @@
           <h2>{{ .Params.what_i_can_help_title }}</h2>
           <p>
             <ul>
-              {{ range .Params.what_i_can_help }}
+              {{ range $resume.basics.highlights }}
               <li>{{ . }}</li>
               {{ end }}
             </ul>

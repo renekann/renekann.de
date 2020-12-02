@@ -1,0 +1,15 @@
+{{#if resume.skills.length}}
+  <div class="container publications-container">
+    {{> word/title value="Skills"}}
+    {{#each resume.skills}}
+      <div style="margin-bottom: 10px">
+        {{#if name}}
+          <h4>{{name}}</h4>
+        {{/if}}
+        {{#if keywords.length}}
+          <h6>{{join keywords ", "}}</h6>
+        {{/if}}
+      </div>
+    {{/each}}
+  </div>
+{{/if}}

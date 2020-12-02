@@ -33,6 +33,13 @@
           <a href="{{ .website }}">{{ .company }}</a>
           {{ end }}
           </span>
+          {{ if isset .keywords 0}}
+          <div class="keywords">
+            {{ range .keywords }}
+            <span>{{ . }}</span>
+            {{ end }}
+          </div>
+          {{ end }}
           <p>{{ .summary }}</p>
           {{ if isset .highlights 0}}
           <ul>
@@ -45,7 +52,11 @@
           {{ if .links }}
           <ul class="work-links">
             {{ range .links }}
-            <li><a href="{{ .link }}" target="_blank"><i class="fab {{ .icon }} fa-md" aria-hidden="true"></i> {{ .platform }}</a></li>
+              {{ if eq .link "" }}
+                <li class=""><i class="fab {{ .icon }} fa-md" aria-hidden="true"></i> {{ .platform }}</li>
+              {{ else }}
+                <li><a href="{{ .link }}" target="_blank"><i class="fab {{ .icon }} fa-md" aria-hidden="true"></i> {{ .platform }}</a></li>
+              {{ end }}
             {{ end }}
           </ul>
           {{ end }}

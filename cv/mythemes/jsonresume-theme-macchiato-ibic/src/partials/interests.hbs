@@ -1,0 +1,20 @@
+{{#if resume.interests.length}}
+    <div class="container interests-container">
+        {{> title value="Interests"}}
+
+        {{#each resume.interests}}
+            <div class="item">
+                {{#if name}}
+                    <h4 class="bold">{{name}}</h4>
+                {{/if}}
+                {{#if keywords.length}}
+                    <ul class="minimal">
+                        {{#each keywords}}
+                            <li>{{.}}</li>
+                        {{/each}}
+                    </ul>
+                {{/if}}
+            </div>
+        {{/each}}
+    </div>
+{{/if}}

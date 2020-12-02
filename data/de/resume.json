@@ -1,15 +1,21 @@
 {
   "basics": {
     "name": "René Kann",
-    "label": "Senior iOS Developer | Mobile Lead",
-    "picture": "../../static/img/avatar.jpg",
+    "label": "Senior Mobile Developer | Interim Lead",
+    "picture": "https://www.renekann.de/img/avatar.jpg",
     "email": "mail@renekann.de",
     "phone": "0160 4421713",
     "degree": "",
     "website": "www.renekann.de",
     "summary": "Ich bin ein Software-Ingenieur mit langjähriger Erfahrung für Mobile (iOS / Flutter) und Web, einschließlich der Kenntnisse des \"Full-Stacks\" von Web-Technologien für Frontend- und Backend-Services.",
     "longSummary": "Als Entwickler und CTO / Mobile Lead übernahm ich in der Vergangenheit die technische und strategische Führung verschiedener Projekte für namhafte, multinationale Kunden (z.B. Daimler AG, Mercedes-Benz Museum, Porsche AG, ImmobilienScout24, BKK VBU) und Teams unterschiedlicher Größe (zwischen 5 und 15 Personen). Durch die langjährige Arbeit in einer Usability Agentur und meine hohe Eigenmotivation besitze ich eine ausgeprägtes Interesse für „benutzbare“ Produkte, welche langfristig auf einer technisch soliden Basis stehen.",
-    "highlights": null,
+    "highlights": [
+      "Ein MVP entwickeln",
+      "von Objective-C zu Swift migrieren",
+      "Interim Tech Lead / Interim CTO",
+      "Refactoring, Einführung von Testbarkeit, Leistungsprobleme aufspüren",
+      "Mentoring"
+    ],
     "location": {
       "address": "Prenzlauer Allee 44",
       "postalCode": "10405",
@@ -40,19 +46,30 @@
       }
     ]
   },
+  "clients": [
+    {
+      "name": "Daimler AG",
+      "logo": "DaimlerLogo.svg"
+    },
+    {
+      "name": "ImmobilienScout24",
+      "logo": "ImmoScout24_Logo_2020.svg"
+    }
+  ],
   "work": [
     {
       "company": "BKK VBU",
-      "position": "Freelance Senior Software Consultant",
+      "position": "Freelance Interim Tech Lead",
       "website": "https://www.meine-krankenkasse.de",
       "startDate": "2019-08-01",
-      "endDate": "2020-09-30",
-      "summary": "Unterstützung bei der Realisierung von (mobilen) Anwendungen im Bereich eHealth und der Digitalisierung des Gesundheitswesens. Umsetzung einer App für Versicherte der BKK VBU, um in Kontakt mit Ihrer Krankenkasse zu treten und Aufgaben erledigen zu können. Neben der App (Flutter) wurde der komplette Stack auf Basis von Kubernetes und verschiedenen einzelnen Services realisiert. Diese Services wurden an etablierte Standard-Tools der Krankenkasse angebunden (z.B. 21c der BITMARCK), um Daten für Versicherte bereitzustellen.",
+      "endDate": "2020-12-31",
+      "summary": "Unterstützung bei der Realisierung von (mobilen) Anwendungen im Bereich eHealth und der Digitalisierung des Gesundheitswesens. Umsetzung einer App \"auf der grünen Wiese\" für Versicherte, um in Kontakt mit Ihrer Krankenkasse treten und Aufgaben erledigen zu können. Neben der App (Flutter) wurde der komplette Stack auf Basis von Kubernetes und verschiedenen einzelnen Services realisiert. Diese Services wurden an etablierte Standard-Tools der Krankenkasse angebunden (z.B. 21c der BITMARCK), um Daten für Versicherte bereitzustellen.",
       "highlights": [
         "Interim Tech Lead für VBU platform",
         "Mentoring interner Entwickler (Architektur / Code Standards)",
         "Realisierung einer Flutter App und Umsetzung verschiedener Services betrieben mit Kubernetes"
       ],
+      "keywords": ["Kubernetes", "Flutter", "RabbitMQ", "Keycloak", "eHealth", "CI/CD", "Redux", "B2C"],
       "links": [
         {
           "platform": "iOS",
@@ -76,13 +93,14 @@
       "highlights": []
     },
     {
-      "company": "Successyou GmbH",
+      "company": "Successyou GmbH (Teil von OSF Digital)",
       "position": "Freelance Senior iOS Developer + Consultant",
       "teaser": "Maintained B2B App for sales rep",
       "website": "http://www.successyou.de/",
       "startDate": "2019-01-01",
       "endDate": "2019-05-31",
       "summary": "Ich betreute eine App für einen multinationalen Konzern von alkoholfreien Getränkekonzentraten, die von einer großen Gruppe von Vertriebsmitarbeitern in Europa verwendet wurde. Die App war äußerst reaktiv, mit einem Salesforce-Backend verbunden und verwendete Couchbase Lite für die lokale Persistenz. Ich habe die App und die zugehörigen Frameworks auf Swift 4.2 migriert und Architekturentscheidungen und -empfehlungen gegeben.",
+      "keywords": ["Salesforce", "Swift", "Couchbase","B2B"],
       "highlights": [
         "Salesforce SDK / Salesforce mit iOS",
         "Couchbase lite für lokale Persistenz",
@@ -96,6 +114,7 @@
       "startDate": "2018-10-01",
       "endDate": "2018-12-31",
       "summary": "Ich arbeitete in einer englischsprachigen Umgebung und unterstützte die testgetriebene Implementierung einer komplett neuen Funktion für die Registrierung bei mehreren Anbietern. Des Weiteren habe ich Architekturentscheidungen und -empfehlungen getroffen, einen Workshop zur Einführung der Testbarkeit für das Gesamtprojekt gegeben und dabei geholfen, von Objective-C auf Swift 4.x zu migrieren",
+      "keywords": ["Objective-C", "Swift", "Migration", "Workshop", "B2C"],
       "highlights": [
         "Tests für das Projekt eingeführt, Workshop zu UnitTests",
         "Internationales Team",
@@ -110,6 +129,7 @@
       "endDate": "2018-09-30",
       "summary": "In einem englischsprachigen Umfeld unterstützte ich die testgetriebene Implementierung neuer Produktfunktionen mit Swift / Objective-C und MVVM, MVP in zweiwöchentlichen Sprints für die ImmobilienScout24 App. Ich habe auch bei der Bewertung neuer Produktideen und der Durchführbarkeitsstudie zur Vernetzung externer Dienstleister mitgewirkt.",
       "shortSummary": "Realtor Lead Engine",
+      "keywords": ["Swift", "Objective-C", "Test-Driven", "AWS", "Migration", "B2C"],
       "highlights": [
         "Umsetzung eines neuen Features zur Maklervermittlung und Immobilienbewertung",
         "Internationales Team",
@@ -131,6 +151,7 @@
       "startDate": "2017-01-01",
       "endDate": "2017-12-31",
       "summary": "Unterstützung bei der Pflege einer iOS-App für ein führendes deutsches multinationales Automobilunternehmen. Ich implementierte neue Funktionen in wöchentlichen Sprints, führte Code Reviews durch und überarbeitete mehrere Teile der App, um die „technical Dept“ zu reduzieren. Des Weiteren habe ich eine App (von Grund auf neu) für Besucher von Kongressen implementiert, um Vorträge zu verwalten, Fragen an die Referenten zu stellen und Zugriff auf das gesamte Veranstaltungsprogramm zu erhalten. Die App verwendet Google Firebase als Back-End. Die Hauptarchitektur basiert auf MVVM und konzentriert sich auf Offline-Funktionen, um auch bei schlechten Netzwerkbedingungen zu funktionieren.",
+      "keywords": ["Objective-C", "Swift", "Firebase", "Neuentwickung", "Mentoring", "MVVM", "B2C"],
       "highlights": [
         "Pflege einer App für Automobilunternehmen",
         "Mentoring von mobilen Entwicklern",
@@ -140,7 +161,7 @@
         {
           "platform": "iOS QuintEvent",
           "icon": "fa-apple",
-          "link": "https://apps.apple.com/de/app/quintevent/id1297378732"
+          "link": ""
         }
       ]
     },
@@ -171,7 +192,7 @@
     {
       "company": "Schroeder + Wendt GbR",
       "position": "Freelancer für RIA und Web Development",
-      "website": "http://www.schroeder-wendt.de",
+      "website": "",
       "startDate": "2006-06-01",
       "endDate": "2009-10-31",
       "summary": "Ich implementierte Rich-Internet-Anwendungen (RIA) mit Flash, Flex und Silverlight sowie Webanwendungen für verschiedene größere Clients. Mittels Silverlight habe ich einen Prototyp eines möglichen Online-Tools zur Videoanalyse und -bearbeitung für eine Präsentation zur Cebit 2012 zusammen mit Microsoft erstellt.",
@@ -182,8 +203,8 @@
   "additionalWorkLabel": "",
   "education": [
     {
-      "institution": "Otto-von-Guericke University Magdeburg",
-      "area": "Computervisualistik, Schwerpunkt Maschinenbau",
+      "institution": "Otto-von-Guericke Universität Magdeburg",
+      "area": "der Computervisualistik, Schwerpunkt Maschinenbau",
       "studyType": "Dipl.-Ing.",
       "startDate": "2005-08-01",
       "endDate": "2011-05-31",
@@ -208,9 +229,11 @@
         "Objective-C",
         "Swift",
         "Flutter",
+        "Redux",
         "Cocoapods",
         "Carthage",
         "Xcode",
+        "Dart",
         "JSON",
         "Fastlane",
         "Dependency Injection",
@@ -226,12 +249,9 @@
         "Salesforce SDK",
         "Couchbase lite",
         "PromiseKit",
-        "Buddybuild",
-        "HockeyApp",
         "Tesseract OCR",
         "Git",
-        "In-App Purchasing (IAP)",
-        "WatchKit"
+        "Browserstack"
       ]
     },
     {
@@ -261,6 +281,7 @@
         "Grunt",
         "ReactJS",
         "JavaScript",
+        "TypeScript",
         "Python 3.x"
       ]
     },
@@ -284,21 +305,21 @@
       "website": "",
       "startDate": "2013-01-01",
       "endDate": "2014-06-30",
-      "summary": "Ich organisierte ein monatliches Treffen mit bis zu 100 Besuchern, die sich mit Web- und Mobiltechnologien bei Startups und Organisationen befassten.",
+      "summary": "Ich organisierte ein monatliches Treffen mit bis zu dreistelligen Besucherzahlen, die sich mit Web- und Mobiltechnologien bei Startups und Organisationen befassten.",
       "highlights": []
     }
   ],
   "languages": [
     {
-      "name": "German",
-      "level": "Muttersprache oder Zweisprachig"
+      "name": "Deutsch",
+      "level": "Muttersprache"
     },
     {
-      "name": "English",
+      "name": "Englisch",
       "level": "Verhandlungssicher"
     },
     {
-      "name": "Spanish",
+      "name": "Spanisch",
       "level": "Grundkenntnisse"
     }
   ]
