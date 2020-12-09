@@ -10,7 +10,7 @@ My personal website at [www.renekann.de](https://www.renekann.de) built with Hug
 - run `npm install`
 
 # Local development
-- run `hugo server -D` to  start Hugo Server
+- run `hugo serve -D` to  start Hugo Server
 - run `gulp`
 - run `build.sh all` in folder `cv` to build all types (PDF and Word in en + de)
 

@@ -9,15 +9,19 @@ defaultContentLanguageInSubdir = true
     weight = 1
     contactEndpoint = "https://app.99inbound.com/api/e/Yt0LOhWn"
     honeypot = "excellent_taupe_satin_toad"
+    siteDescription = "I am a software engineer with many years of experience for Mobile (iOS / Flutter) and web, including knowledge of the \"full-stack\" of web technologies for frontend and backend services."
+
   [languages.de]
     languageName = "DE"
     weight = 2
     contactEndpoint = "https://app.99inbound.com/api/e/09UD9P5C"
     honeypot = "free_range_coral_houndstooth_sand"
+    siteDescription = "Ich bin ein Software-Ingenieur mit langjähriger Erfahrung für Mobile (iOS / Flutter) und Web, einschließlich der Kenntnisse des \"Full-Stacks\" von Web-Technologien für Frontend- und Backend-Services."
 
 [params]
   title = "René Kann - Senior Mobile (iOS / Flutter) Developer in Berlin"
   favicon = "favicon.png"
+  metaImage = "avatar.jpg"
 
 [params.nav]
   enable = true
