@@ -18,6 +18,10 @@
     changeModeText();
   });
 
+  $('.carousel').carousel({
+    interval: false
+  })
+
   setColorScheme();
 
   function changeModeText() {

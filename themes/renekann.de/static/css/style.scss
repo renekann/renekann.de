@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300&display=swap');
 @import "config";
+@import "carousel";
 
 @mixin transition-effect {
   transition: all 0.4s ease;
@@ -411,6 +413,10 @@ li {
 .dark-mode {
   background: $dark-mode-color;
   @import 'darkmode';
+}
+
+.quotes-container {
+  margin-top: 60px;
 }
 
 .work .row:last-child .timeline-beam-dotted:last-child {

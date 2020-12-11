@@ -2,6 +2,9 @@
 {{ if .Site.Params.profile.enable }}
 {{ partial "profile.html" . }}
 {{ end }}
+{{ if .Site.Params.quotes.enable }}
+{{ partial "quotes.html" . }}
+{{ end }}
 {{ if .Site.Params.clients.enable }}
 {{ partial "clients.html" . }}
 {{ end }}

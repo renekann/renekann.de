@@ -128,3 +128,11 @@ color           : #fff;
 .keywords {
   color: $text-white;
 }
+
+#quote-carousel .carousel-indicators li {
+  background-color: #999999;
+}
+
+#quote-carousel .carousel-indicators .active {
+  background-color: #fff;
+}

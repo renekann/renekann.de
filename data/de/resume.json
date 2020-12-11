@@ -46,6 +46,22 @@
       }
     ]
   },
+  "quotes": [
+    {
+      "name": "Roman Scheffler",
+      "role": "Head of Platform and Applications, BKK VBU",
+      "image": "roman.jpeg",
+      "link": "https://www.linkedin.com/in/roman-scheffler/",
+      "quote": "Bevor du da warst, wusste keiner in der VBU wie man eine App produktiv nimmt. Du hast einen immensen Footprint, indem du dich mit der Sache identifizierst wie ein Interner und dennoch es schaffst deine externe Expertise auf allen Ebenen einzubringen- entweder durch Coaching der Kollegen oder Rat an mich. Danke dafür!"
+    },
+    {
+      "name": "Matthias C. Schroeder",
+      "role": "UX Lead / Sr. UX / Interaction Designer, ehem. CEO UCDplus",
+      "image": "matthias.jpeg",
+      "link": "https://www.linkedin.com/in/userinterfacedesigner/",
+      "quote": "René ist ein hervorragender, problemlösender Ingenieur im Bereich der Web- und Mobilanwendungen und der (Code-)Qualitätssicherung. Es ist ein Vergnügen, mit ihm zu arbeiten und ich empfehle ihn wärmstens."
+    }
+  ],
   "clients": [
     {
       "name": "Daimler AG",
@@ -70,6 +86,12 @@
         "Realisierung einer Flutter App und Umsetzung verschiedener Services betrieben mit Kubernetes"
       ],
       "keywords": ["Kubernetes", "Flutter", "RabbitMQ", "Keycloak", "eHealth", "CI/CD", "Redux", "B2C"],
+      "feedback": [
+        {
+          "name": "Roman Scheffler (Head of Platform and Applications)",
+          "link": "romanscheffler.pdf"
+        }
+      ],
       "links": [
         {
           "platform": "iOS",

@@ -4,11 +4,9 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
 <html lang="{{ .Lang }}">
-
 <head>
   {{ partial "head.html" .}}
 </head>
-
 <body>
   {{ partial "nav.html" .}}
   {{ block "main" . }}
@@ -17,5 +15,4 @@
   {{ partial "footer.html" . }}
   {{ partial "javascript.html" . }}
 </body>
-
 </html>

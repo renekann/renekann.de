@@ -30,6 +30,9 @@ defaultContentLanguageInSubdir = true
   enable = true
   anchor = "about"
 
+[params.quotes]
+  enable = true
+
 [params.skills]
   enable = true
   anchor = "skills"

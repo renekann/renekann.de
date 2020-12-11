@@ -20,6 +20,8 @@
   translation: "Kontakt"
 - id:          work_title
   translation: "Erfahrung"
+- id:          project_feedback
+  translation: "Projekt Feedback"
 - id:          contact_title
   translation: "Kontakt"
 - id:          contact_work_together

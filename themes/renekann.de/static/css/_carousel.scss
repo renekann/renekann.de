@@ -1,0 +1,29 @@
+/* Changes the position of the indicators */
+#quote-carousel .carousel-indicators li {
+  width: 6px;
+  height: 6px;
+  border: 0px;
+  background-color: #c8c8c8;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+#quote-carousel .carousel-indicators .active {
+  background-color: #646464;
+}
+
+#quote-carousel .carousel-inner {
+  padding-bottom: 25px;
+}
+
+#quote-carousel .carousel-inner .carousel-item p {
+  font-size: 18px;
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+}
+
+#quote-carousel .carousel-inner .carousel-item .img-circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+}

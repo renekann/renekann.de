@@ -49,6 +49,14 @@
           </ul>
           {{ end }}
 
+          {{ if .feedback }}
+            <ul class="work-links">
+              {{ range .feedback }}
+                <li>{{ i18n "project_feedback" }}: <a href="{{ .Site.BaseURL }}/feedback/{{ .link }}" target="_blank"><i class="fab {{ .icon }} fa-md" aria-hidden="true"></i> {{ .name }}</a></li>
+              {{ end }}
+            </ul>
+          {{ end }}
+
           {{ if .links }}
           <ul class="work-links">
             {{ range .links }}
