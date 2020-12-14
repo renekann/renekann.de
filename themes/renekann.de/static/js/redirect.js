@@ -17,10 +17,6 @@ function redirect(actuallang) {
     return
   }
 
-  if (baseUrl == "localhost") {
-    baseUrl = baseUrl + ":1313"
-  }
-
   switch (actuallang) {
     case 'de':
       newPath = '/de';
