@@ -19,7 +19,7 @@ defaultContentLanguageInSubdir = true
     siteDescription = "Ich bin ein Software-Ingenieur mit langjähriger Erfahrung für Mobile (iOS / Flutter) und Web, einschließlich der Kenntnisse des \"Full-Stacks\" von Web-Technologien für Frontend- und Backend-Services."
 
 [params]
-  title = "René Kann - Senior Mobile (iOS / Flutter) Developer in Berlin"
+  title = "René Kann - Mobile Architect in Berlin (native iOS / Flutter)"
   favicon = "favicon.png"
   metaImage = "avatar.jpg"
 
