@@ -75,6 +75,31 @@
   "work": [
     {
       "company": "BKK VBU",
+      "position": "Senior Engineer (permanent)",
+      "website": "https://www.meine-krankenkasse.de",
+      "startDate": "2021-03-01",
+      "endDate": "",
+      "summary": "Realiserung von (mobilen) Anwendungen im Bereich eHealth und der Digitalisierung des Gesundheitswesens mit Fokus auf \"Joy of Use\". Aufbau von Prozessen für nachhaltige Softwareentwicklung und Clean Code Prinzipien.",
+      "highlights": [
+        "Mentoring für Entwickler (Coding Standards für Apps)",
+        "Wartung und Weiterentwicklung der Infrastruktur"
+      ],
+      "keywords": ["Kubernetes", "Flutter", "RabbitMQ", "eHealth", "CI/CD", "B2C"],
+      "links": [
+        {
+          "platform": "iOS",
+          "icon": "fa-apple",
+          "link": "https://apps.apple.com/de/app/bkk-vbu-meine-krankenkasse/id1488743521?l=de"
+        },
+        {
+          "platform": "Android",
+          "icon": "fa-android",
+          "link": "https://play.google.com/store/apps/details?id=de.meine_krankenkasse.vhoenixapp"
+        }
+      ]
+    },
+    {
+      "company": "BKK VBU",
       "position": "Freelance Senior Mobile Developer / Interim Tech Lead",
       "website": "https://www.meine-krankenkasse.de",
       "startDate": "2019-08-01",

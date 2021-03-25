@@ -54,3 +54,5 @@
   translation: "Nach oben"
 - id:          currently_not_available
   translation: "Aktuell nicht verfügbar bis:"
+- id:          today
+  translation: "heute"
